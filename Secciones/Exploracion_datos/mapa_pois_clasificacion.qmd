@@ -1,0 +1,26 @@
+# Datos {menu-title="Áreas de análisis"}
+
+::: {.subtitle}
+
+Áreas de estudio seleccionadas mediante un enfoque basado en PTAL
+
+:::
+
+:::: {.columns-exploracion-main}
+
+::: {.columns-exploracion-sub width="50%"}
+
+{{< include Secciones/Exploracion_datos/bloque_tabla_clasificacion.qmd >}}
+
+{{< include Secciones/Exploracion_datos/bloque_tabla_resumen.qmd >}}
+
+::: 
+<!-- Cierra columns-exploracion-sub -->
+
+::: {.columns-exploracion-mapa width="50%"}
+
+{{< include Secciones/Exploracion_datos/bloque_mapa_pois.qmd >}}
+
+:::
+
+::::

@@ -1,0 +1,21 @@
+# Metodología {menu-title="Metodología - Exploración de datos GPS"}
+
+::: {.subtitle}
+Exploración espacial de la oferta
+:::
+
+> **¿Cómo se distribuye espacialmente la oferta de transporte público en el área de estudio?**
+
+
+::: {.metodo-intro}
+
+A partir de los **registros GPS observados**, se utiliza una **adaptación del PTAL** para explorar espacialmente la intensidad de la oferta de transporte público.
+
+:::
+
+
+<div class="metodo-tag">
+REGISTROS GPS &nbsp; → &nbsp; PTAL &nbsp; → &nbsp; CARACTERIZACIÓN ESPACIAL
+</div>
+
+{{< include Secciones/Metodologia/Data_gps/bloque_mapa_gtfs.qmd >}}

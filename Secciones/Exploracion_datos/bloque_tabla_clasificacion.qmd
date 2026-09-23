@@ -1,0 +1,131 @@
+
+```{=html}
+<div class="tabla-clasificacion-poi">
+
+  <div class="titulo-clasificacion-poi">
+    Distribución de categorías de puntos de interés (POI) por área
+  </div>
+<table class="poi-table">
+
+<colgroup>
+    <col style="width: 15%">
+    <col style="width: 6%">
+    <col style="width: 6%">
+    <col style="width: 6%">
+
+    <col style="width: 15%">
+    <col style="width: 6%">
+    <col style="width: 6%">
+    <col style="width: 6%">
+
+    <col style="width: 15%">
+    <col style="width: 6%">
+    <col style="width: 6%">
+    <col style="width: 6%">
+</colgroup>
+
+  <thead>
+    <tr>
+      <th>Categoría</th>
+      <th>Baja</th>
+      <th>Inter.</th>
+      <th>Alta</th>
+
+      <th>Categoría</th>
+      <th>Baja</th>
+      <th>Inter.</th>
+      <th>Alta</th>
+
+      <th>Categoría</th>
+      <th>Baja</th>
+      <th>Inter.</th>
+      <th>Alta</th>
+    </tr>
+  </thead>
+
+  <tbody>
+
+  <tr>
+    <td>Restaurant</td><td>8</td><td>18</td><td>213</td>
+    <td>Bank</td><td>1</td><td>–</td><td>27</td>
+    <td>Police</td><td>3</td><td>–</td><td>7</td>
+  </tr>
+
+  <tr>
+    <td>Doctor</td><td>16</td><td>8</td><td>135</td>
+    <td>Event Venue</td><td>1</td><td>10</td><td>16</td>
+    <td>Sports Club</td><td>1</td><td>2</td><td>7</td>
+  </tr>
+
+  <tr>
+    <td>Pharmacy</td><td>4</td><td>8</td><td>60</td>
+    <td>Home Improvement Store</td><td>3</td><td>–</td><td>22</td>
+    <td>Department Store</td><td>–</td><td>–</td><td>6</td>
+  </tr>
+
+  <tr>
+    <td>School</td><td>8</td><td>10</td><td>52</td>
+    <td>Supermarket</td><td>–</td><td>5</td><td>18</td>
+    <td>Drugstore</td><td>–</td><td>–</td><td>6</td>
+  </tr>
+
+  <tr>
+    <td>Hospital</td><td>6</td><td>7</td><td>56</td>
+    <td>Sports Complex</td><td>1</td><td>4</td><td>14</td>
+    <td>Post Office</td><td>–</td><td>1</td><td>5</td>
+  </tr>
+
+  <tr>
+    <td>Grocery Store</td><td>6</td><td>11</td><td>48</td>
+    <td>Convenience Store</td><td>–</td><td>–</td><td>14</td>
+    <td>Primary School</td><td>1</td><td>3</td><td>2</td>
+  </tr>
+
+  <tr>
+    <td>Government Office</td><td>2</td><td>8</td><td>53</td>
+    <td>Market</td><td>1</td><td>1</td><td>11</td>
+    <td>Fitness Center</td><td>1</td><td>–</td><td>4</td>
+  </tr>
+
+  <tr>
+    <td>Shopping Mall</td><td>2</td><td>3</td><td>58</td>
+    <td>Preschool</td><td>–</td><td>4</td><td>8</td>
+    <td>Stadium</td><td>–</td><td>4</td><td>1</td>
+  </tr>
+
+  <tr>
+    <td>Dentist</td><td>2</td><td>3</td><td>50</td>
+    <td>Secondary School</td><td>–</td><td>1</td><td>11</td>
+    <td>Spa</td><td>–</td><td>–</td><td>4</td>
+  </tr>
+
+  <tr>
+    <td>University</td><td>21</td><td>–</td><td>31</td>
+    <td>ATM</td><td>–</td><td>–</td><td>11</td>
+    <td>Physiotherapist</td><td>–</td><td>1</td><td>2</td>
+  </tr>
+
+  <tr>
+    <td>Dental Clinic</td><td>1</td><td>5</td><td>42</td>
+    <td>Medical Lab</td><td>1</td><td>3</td><td>7</td>
+    <td>Chiropractor</td><td>–</td><td>–</td><td>1</td>
+  </tr>
+
+  <tr>
+    <td>Corporate Office</td><td>5</td><td>–</td><td>42</td>
+    <td>Wellness Center</td><td>1</td><td>1</td><td>9</td>
+    <td>Library</td><td>–</td><td>1</td><td>–</td>
+  </tr>
+
+  <tr>
+    <td>Gym</td><td>2</td><td>3</td><td>29</td>
+    <td></td><td></td><td></td><td></td>
+    <td></td><td></td><td></td><td></td>
+  </tr>
+
+</tbody>
+
+</table>
+
+</div>
+```

@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 600" width="100%" height="100%">
+  <rect width="100%" height="100%" fill="none" rx="100"/>
+
+  <g stroke="#1e293b" stroke-width="8" stroke-linecap="round" stroke-linejoin="round">
+    
+    <path d="M 150 480 Q 400 450 550 300 T 820 120" fill="none" stroke="#cbd5e1" stroke-width="12" stroke-dasharray="16 12" />
+    <polyline points="790,120 820,120 820,150" fill="none" stroke="#cbd5e1" stroke-width="12" />
+
+    <g transform="translate(130, 380)">
+      <circle cx="50" cy="70" r="25" fill="#94a3b8" />
+      <circle cx="50" cy="70" r="10" fill="#f4f7f9" stroke-width="6" />
+      
+      <rect x="25" y="0" width="50" height="50" rx="8" fill="#ef4444" />
+      <line x1="25" y1="18" x2="75" y2="18" stroke-width="6" />
+    </g>
+
+    <path d="M 240 430 Q 300 420 340 390" fill="none" stroke="#1e293b" stroke-width="6" />
+    <polygon points="330,382 345,387 338,402" fill="#1e293b" />
+
+
+    <g transform="translate(390, 260)">
+      <rect x="20" y="50" width="90" height="65" rx="10" fill="#3a536b" />
+      <line x1="20" y1="82" x2="110" y2="82" />
+      <circle cx="40" cy="66" r="6" fill="#10b981" stroke="none" />
+      <circle cx="40" cy="97" r="6" fill="#10b981" stroke="none" />
+      <circle cx="60" cy="66" r="4" fill="#94a3b8" stroke="none" />
+      <circle cx="60" cy="97" r="4" fill="#94a3b8" stroke="none" />
+
+      <rect x="50" y="0" width="60" height="60" rx="10" fill="#2563eb" />
+      <rect x="30" y="12" width="60" height="60" rx="10" fill="#3b82f6" />
+      <line x1="45" y1="32" x2="75" y2="32" stroke="#ffffff" stroke-width="5" />
+    </g>
+
+    <path d="M 530 290 Q 600 260 650 200" fill="none" stroke="#1e293b" stroke-width="6" />
+    <polygon points="638,195 655,195 648,212" fill="#1e293b" />
+
+
+    <g transform="translate(680, 80)">
+      <path d="M 40 100 A 30 30 0 0 1 90 80 A 45 45 0 0 1 170 70 A 40 40 0 0 1 210 110 A 30 30 0 0 1 200 150 L 40 150 A 25 25 0 0 1 40 100 Z" fill="#3a536b" />
+
+      <rect x="50" y="105" width="130" height="95" rx="12" fill="#2d4052" />
+      <line x1="50" y1="137" x2="180" y2="137" />
+      <line x1="50" y1="169" x2="180" y2="169" />
+      <circle cx="75" cy="121" r="7" fill="#10b981" stroke="none" />
+      <circle cx="75" cy="153" r="7" fill="#10b981" stroke="none" />
+      <circle cx="75" cy="185" r="7" fill="#10b981" stroke="none" />
+      <line x1="100" y1="121" x2="150" y2="121" stroke="#94a3b8" stroke-width="6" />
+      <line x1="100" y1="153" x2="150" y2="153" stroke="#94a3b8" stroke-width="6" />
+      <line x1="100" y1="185" x2="150" y2="185" stroke="#94a3b8" stroke-width="6" />
+
+      <rect x="15" y="20" width="85" height="85" rx="14" fill="#059669" />
+      <polyline points="45,55 45,38 62,38" fill="none" stroke="#ffffff" stroke-width="6" />
+      <polyline points="70,70 70,87 53,87" fill="none" stroke="#ffffff" stroke-width="6" />
+      <circle cx="150" cy="35" r="12" fill="#eab308" />
+      <line x1="90" y1="45" x2="140" y2="38" stroke-dasharray="6 6" />
+    </g>
+
+    <g transform="translate(900, 60)" fill="#eab308" stroke="#1e293b" stroke-width="4">
+      <polygon points="15,0 19,9 28,10 21,16 23,25 15,20 7,25 9,16 2,10 11,9" />
+    </g>
+    <g transform="translate(640, 60)" fill="#eab308" stroke="#1e293b" stroke-width="4">
+      <polygon points="10,0 13,6 19,7 14,11 15,17 10,14 5,17 6,11 1,7 7,6" />
+    </g>
+
+  </g>
+</svg>

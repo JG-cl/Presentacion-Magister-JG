@@ -1,0 +1,210 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="400" viewBox="0 0 400 400">
+
+  <defs>
+    <marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto">
+      <path d="M0,0 L8,4 L0,8 Z" fill="#334155"></path>
+    </marker>
+
+    <style>
+      .title {
+        font-family: Arial, sans-serif;
+        font-size: 17px;
+        font-weight: 700;
+        fill: #1e293b;
+      }
+
+      .label {
+        font-family: Arial, sans-serif;
+        font-size: 13px;
+        font-weight: 600;
+        fill: #334155;
+      }
+
+      .small {
+        font-family: Arial, sans-serif;
+        font-size: 11px;
+        fill: #64748b;
+      }
+
+      .axis {
+        stroke: #475569;
+        stroke-width: 2;
+        stroke-linecap: round;
+      }
+
+      .guide {
+        stroke: #94a3b8;
+        stroke-width: 1.5;
+        stroke-dasharray: 5 4;
+      }
+
+      .arrow {
+        stroke: #334155;
+        stroke-width: 2.2;
+        fill: none;
+        marker-end: url(#arrow);
+      }
+    </style>
+  </defs>
+
+  <!-- Título -->
+  <text x="200" y="30" text-anchor="middle" class="title">
+    Preparación de variables
+  </text>
+
+  <!-- =================================================== -->
+  <!-- 1. FRECUENCIA ORIGINAL -->
+  <!-- =================================================== -->
+
+  <g transform="translate(30,58)">
+
+    <text x="0" y="0" class="label">
+      Frecuencia original
+    </text>
+
+    <!-- Ejes -->
+    <line x1="0" y1="92" x2="125" y2="92" class="axis"></line>
+    <line x1="0" y1="92" x2="0" y2="22" class="axis"></line>
+
+    <!-- Distribución sesgada -->
+    <rect x="8" y="30" width="12" height="62" rx="3" fill="#3b82f6"></rect>
+    <rect x="25" y="44" width="12" height="48" rx="3" fill="#3b82f6"></rect>
+    <rect x="42" y="59" width="12" height="33" rx="3" fill="#3b82f6"></rect>
+    <rect x="59" y="70" width="12" height="22" rx="3" fill="#60a5fa"></rect>
+    <rect x="76" y="78" width="12" height="14" rx="3" fill="#60a5fa"></rect>
+    <rect x="93" y="84" width="12" height="8" rx="3" fill="#93c5fd"></rect>
+
+    <!-- Valor extremo -->
+    <circle cx="121" cy="88" r="4.5" fill="#ef4444"></circle>
+
+    <text x="62" y="109" text-anchor="middle" class="small">
+      buses/h
+    </text>
+
+    <text x="121" y="75" text-anchor="middle" class="small" fill="#ef4444">
+      extremo
+    </text>
+  </g>
+
+  <!-- Flecha transformación -->
+  <path d="M172 105 H224" class="arrow"></path>
+
+  <rect x="174" y="69" width="48" height="25" rx="8" fill="#e0f2fe" stroke="#0284c7" stroke-width="1.5"></rect>
+
+  <text x="198" y="86" text-anchor="middle" class="label" fill="#0369a1">
+    log
+  </text>
+
+  <!-- =================================================== -->
+  <!-- 2. TRANSFORMACIÓN LOGARÍTMICA -->
+  <!-- =================================================== -->
+
+  <g transform="translate(242,58)">
+
+    <text x="0" y="0" class="label">
+      Transformación log
+    </text>
+
+    <!-- Ejes -->
+    <line x1="0" y1="92" x2="125" y2="92" class="axis"></line>
+    <line x1="0" y1="92" x2="0" y2="22" class="axis"></line>
+
+    <!-- Distribución comprimida -->
+    <rect x="8" y="48" width="13" height="44" rx="3" fill="#14b8a6"></rect>
+    <rect x="27" y="39" width="13" height="53" rx="3" fill="#14b8a6"></rect>
+    <rect x="46" y="43" width="13" height="49" rx="3" fill="#14b8a6"></rect>
+    <rect x="65" y="52" width="13" height="40" rx="3" fill="#2dd4bf"></rect>
+    <rect x="84" y="65" width="13" height="27" rx="3" fill="#5eead4"></rect>
+    <rect x="103" y="76" width="13" height="16" rx="3" fill="#99f6e4"></rect>
+
+    <text x="62" y="109" text-anchor="middle" class="small">
+      log(1 + N)
+    </text>
+  </g>
+
+  <!-- Flecha vertical -->
+  <path d="M200 187 V225" class="arrow"></path>
+
+  <!-- Etiqueta escalamiento -->
+  <rect x="131" y="194" width="138" height="28" rx="9" fill="#f0fdf4" stroke="#16a34a" stroke-width="1.5"></rect>
+
+  <text x="200" y="213" text-anchor="middle" class="label" fill="#15803d">
+    RobustScaler
+  </text>
+
+  <!-- =================================================== -->
+  <!-- 3. ESCALAMIENTO ROBUSTO -->
+  <!-- =================================================== -->
+
+  <g transform="translate(38,245)">
+
+    <text x="162" y="0" text-anchor="middle" class="label">
+      Escalamiento mediante mediana e IQR
+    </text>
+
+    <!-- Eje horizontal -->
+    <line x1="10" y1="75" x2="314" y2="75" class="axis"></line>
+
+    <!-- Marcas -->
+    <line x1="40" y1="70" x2="40" y2="80" class="axis"></line>
+    <line x1="162" y1="68" x2="162" y2="82" class="axis"></line>
+    <line x1="284" y1="70" x2="284" y2="80" class="axis"></line>
+
+    <!-- Bigotes -->
+    <line x1="60" y1="48" x2="264" y2="48" stroke="#16a34a" stroke-width="2"></line>
+
+    <line x1="60" y1="39" x2="60" y2="57" stroke="#16a34a" stroke-width="2"></line>
+
+    <line x1="264" y1="39" x2="264" y2="57" stroke="#16a34a" stroke-width="2"></line>
+
+    <!-- Caja IQR -->
+    <rect x="105" y="29" width="114" height="38" rx="5" fill="#bbf7d0" stroke="#16a34a" stroke-width="2"></rect>
+
+    <!-- Mediana -->
+    <line x1="162" y1="29" x2="162" y2="67" stroke="#166534" stroke-width="3"></line>
+
+    <!-- Guía central -->
+    <line x1="162" y1="68" x2="162" y2="105" class="guide"></line>
+
+    <!-- Valores atípicos -->
+    <circle cx="289" cy="48" r="4.5" fill="#ef4444"></circle>
+    <circle cx="302" cy="48" r="4.5" fill="#ef4444"></circle>
+
+    <!-- Etiquetas -->
+    <text x="105" y="22" text-anchor="middle" class="small">
+      Q1
+    </text>
+
+    <text x="162" y="22" text-anchor="middle" class="small">
+      mediana
+    </text>
+
+    <text x="219" y="22" text-anchor="middle" class="small">
+      Q3
+    </text>
+
+    <text x="40" y="96" text-anchor="middle" class="small">
+      −
+    </text>
+
+    <text x="162" y="96" text-anchor="middle" class="small">
+      0
+    </text>
+
+    <text x="284" y="96" text-anchor="middle" class="small">
+      +
+    </text>
+
+    <text x="162" y="122" text-anchor="middle" class="small">
+      Escala comparable y menor efecto de extremos
+    </text>
+  </g>
+
+  <!-- Fórmula inferior -->
+  <rect x="102" y="373" width="196" height="22" rx="7" fill="#f8fafc" stroke="#cbd5e1"></rect>
+
+  <text x="200" y="389" text-anchor="middle" class="small">
+    x' = (x − mediana) / IQR
+  </text>
+
+</svg>

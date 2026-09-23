@@ -1,0 +1,24 @@
+# Metodología {menu-title="Calibración LOS"}
+
+::: {.subtitle}
+Calibración de los niveles de servicio
+:::
+
+> **¿Cómo determinar niveles de servicio que representen las condiciones operacionales locales?**
+
+::: {.metodo-intro}
+
+Como referencia, se utilizan los **niveles de servicio (LOS) del TCQSM** [@TCQSM2003]. Sin embargo, sus umbrales responden a **condiciones operacionales de otro contexto**, por lo que se requiere una **calibración local con datos observados**.
+
+:::
+
+
+
+
+<div class="metodo-tag">
+
+81 ACCESOS &nbsp; → &nbsp; CORTES NATURALES DE JENKS &nbsp; → &nbsp; LOS CALIBRADOS
+
+</div>
+
+{{< include Secciones/Metodologia/Transporte_publico/bloque_mapa_access.qmd >}}

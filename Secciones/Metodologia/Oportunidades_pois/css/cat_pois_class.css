@@ -1,0 +1,176 @@
+/* =====================================================
+   Slide Clasificación Cat
+===================================================== */
+.svg-poi_class {
+    display: block;
+    width: 100%;
+    margin: 0;
+    /* Evita que el gráfico agrande el layout */
+    /* overflow: hidden; */
+}
+
+.svg-poi_class img {
+    display: block;
+
+    /* Aumenta aquí el tamaño */
+    width: 108%;
+    max-width: none !important;
+
+    height: auto;
+
+    /* Centra el SVG aumentado */
+    margin-left: 50%;
+    transform: translateX(-50%);
+
+    margin-top: -18px;
+    margin-bottom: -56px;
+}
+
+.cat-class-box {
+    width: 100%;
+    box-sizing: border-box;
+
+    /* ESTE es el movimiento vertical */
+    margin: 0px auto 0 auto;
+
+    padding: 12px 40px 0 40px;
+
+    background-color: #e8f0f6;
+
+    border-top: 6px solid #6b88ad;
+    border-left: 4px solid #6b88ad;
+    border-right: 4px solid #6b88ad;
+    border-bottom: 4px solid #E4E4E4;
+
+    border-radius: 100px 100px 0 0;
+
+    color: #1f2d3d;
+    font-style: italic;
+    font-size: 0.7em;
+    line-height: 1.20;
+    text-align: center;
+
+}
+
+.cat-class-box p {
+    margin: 0 !important;
+}
+
+/* =====================================================
+   Fuente
+===================================================== */
+.fuente-propia-cat-class p {
+    margin: 0 !important;
+}
+
+.fuente-propia-cat-class {
+    display: table;
+    margin: 0 auto 10px auto !important;
+    padding: 4px 5px;
+    background: #f5f6f8;
+    border: 4px dashed #6b88ad;
+
+}
+
+.fuente-propia-cat-class::after {
+    content: "Fuente: Elaboración propia";
+    display: block;
+    font-size: .45em;
+    font-style: italic;
+    line-height: 1;
+
+    color: #666;
+
+    text-align: center;
+}
+
+
+
+/* =====================================================
+   Slide Pesos temporales
+===================================================== */
+.json {
+    width: 90%;
+    height: 220px;
+
+    overflow-y: auto !important;
+    overflow-x: auto !important;
+
+    background-color: #ffffff;
+
+    border: 4px solid #bdbdbd;
+    border-radius: 6px;
+
+    padding: 0;
+
+    margin: 10px auto;
+}
+
+.json pre,
+.json code {
+    margin: 0;
+    padding: 12px;
+
+    background: transparent;
+
+    white-space: pre;
+
+    overflow: visible !important;
+
+    border: none !important;
+    box-shadow: none !important;
+
+    font-family: Consolas, monospace;
+    font-size: 0.55em;
+    line-height: 1.2;
+}
+
+/*
+Json Access
+*/
+.json-accessibilityOptions {
+    width: 89%;
+    margin: 0 auto;
+    overflow: hidden !important;
+}
+
+/* Caja blanca del código */
+.json-accessibilityOptions div.sourceCode,
+.json-accessibilityOptions pre.sourceCode,
+.json-accessibilityOptions pre {
+    height: 240px !important;
+    min-height: 125px !important;
+    max-height: 240px !important;
+
+    margin: 0px 0 6px 0px !important;
+    padding: 0px 0px 0px 0px !important;
+
+    overflow: hidden !important;
+
+    font-size: 1.1em !important;
+    line-height: 1.22 !important;
+
+    box-sizing: border-box !important;
+}
+
+/* Código interno */
+.json-accessibilityOptions code,
+.json-accessibilityOptions code.sourceCode,
+.json-accessibilityOptions code span {
+    font-size: 1.1em !important;
+    line-height: 1.22 !important;
+    /* padding-left: 5px; */
+
+
+    white-space: pre !important;
+    word-break: normal !important;
+    overflow: hidden !important;
+    /* border: 4px solid #590b0b; */
+}
+
+/* Evita scrollbars */
+.json-accessibilityOptions pre,
+.json-accessibilityOptions code {
+    overflow: hidden !important;
+    white-space: pre-wrap !important;
+}

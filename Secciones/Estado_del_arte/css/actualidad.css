@@ -1,0 +1,122 @@
+/* =====================================================
+   Estado del arte: tres columnas
+===================================================== */
+
+.columns-actualidad-main {
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: stretch !important;
+
+  width: 95%;
+  margin: 10px auto 0 auto !important;
+  gap: 30px !important;
+
+  font-size: 0.68em;
+  line-height: 1.2;
+}
+
+
+/* =====================================================
+   Columna individual
+===================================================== */
+.columns-actualidad-sub {
+  display: block !important;
+
+  flex: 1 1 0 !important;
+  width: 0 !important;
+  min-width: 0;
+
+  padding: 20px 22px;
+  box-sizing: border-box;
+
+  background: #f4f8fb;
+  border: 3px solid #315777;
+  border-radius: 12px;
+  box-shadow: 0 5px 9px rgba(23, 59, 64, 0.14);
+}
+
+.columns-actualidad-sub p {
+  margin: 0 0 14px !important;
+
+  line-height: 1.2 !important;
+  text-align: left;
+}
+
+/* =====================================================
+   Títulos
+===================================================== */
+ .titulo-actualidad {
+  margin-bottom: 20px;
+  font-size: 1.02em !important;
+  text-align: center !important;
+  color: #173b40;
+  font-weight: 700;
+  line-height: 1.1;
+  text-align: center;
+
+  border-bottom: 5px solid #7898bd;
+}
+
+
+
+/* =====================================================
+   Imagen PTAL
+===================================================== */
+
+.ptal-img {
+  display: block;
+
+  max-width: 85%;
+  max-height: 210px;
+  margin: 15px auto !important;
+
+  object-fit: contain;
+}
+
+
+/* =====================================================
+   Pregunta PTAL
+===================================================== */
+
+.columns-actualidad-sub blockquote {
+  width: auto;
+  margin: 10px 0 0 !important;
+  /* padding: 12px 0px; */
+
+  color: #173b40;
+  font-size: .88em;
+  line-height: 1;
+  text-align: center;
+
+  background: #ffffff;
+  border-left: 5px solid #7894b5;
+  box-shadow: 0 4px 7px rgba(23, 59, 64, 0.12);
+}
+
+
+/* =====================================================
+   Gráfico Popular Times
+===================================================== */
+
+.grafico-populartimes {
+  width: 116%;
+  height: auto;
+  margin: 40px 0 0 -40px;
+  box-sizing: border-box;
+}
+
+/* =====================================================
+   Destacado Telco
+===================================================== */
+
+.telco-destacado {
+  margin-top: 25px;
+  padding: 14px 16px;
+
+  color: #173b40;
+  line-height: 1.2;
+
+  background: #e2f3e1;
+  border-left: 5px solid #75b878;
+  border-radius: 6px;
+}

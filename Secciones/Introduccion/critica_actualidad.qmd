@@ -1,0 +1,19 @@
+# Introducción {menu-title="Crítica de Hägerstrand"}
+
+::: {.subtitle}
+Crítica de Hägerstrand a la ciencia regional
+:::
+
+::: {.critica-text}
+
+En 1970, la ciencia regional tendía a analizar el territorio mediante **flujos agregados, zonas, regiones, matrices origen-destino, densidades y promedios**.
+
+Sin embargo, Hägerstrand [@hagerstrand1970] plantea una crítica central:
+
+> **¿Dónde están las personas reales?**
+
+:::
+
+::: {.people-img}
+![](imagenes/peoples.svg)
+:::

@@ -1,0 +1,31 @@
+.reveal #refs {
+    font-size: 0.9em;
+    line-height: 1.25;
+    text-align: left;
+}
+
+.reveal #refs .csl-entry {
+    position: relative;
+    margin: 20px 40px 20px 20px;
+    padding: 10px;
+    text-indent: 0px;
+
+    border: 1px dotted #b8c0c2;
+    border-left: 6px solid #173f45;
+    border-radius: 8px;
+
+    background:
+        radial-gradient(circle at top right,
+        rgba(23,63,69,0.08),
+        transparent 35%),
+        linear-gradient(180deg,#fafafa,#eef2f3);
+
+    box-shadow: 0 3px 8px rgba(0,0,0,0.14);
+}
+
+.refs-scroll {
+    max-height: 74vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding-right: 15px;
+}

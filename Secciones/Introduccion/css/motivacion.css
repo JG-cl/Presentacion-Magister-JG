@@ -1,0 +1,278 @@
+.motivacion-intro {
+        position: relative;
+        font-size: 0.95em;
+        font-weight: 700;
+        width: 87%;
+        margin: 20px auto;
+        padding: 18px 28px;
+        background: rgba(255, 255, 255, 0.55);
+        border-radius: 8px;
+        border: none !important;
+        border-left: none !important;
+        box-shadow: 12px 12px 2px 1px rgba(0, 0, 0, 0.12) !important;
+        text-align: center;
+        transform: translateY(-2px);
+}
+
+.motivacion-intro::before,
+.motivacion-intro::after {
+    content: "";
+
+    position: absolute;
+
+    width: 50px;
+    height: 50px;
+
+    pointer-events: none;
+}
+
+.motivacion-intro::before {
+    top: 0;
+    left: 0;
+
+    border-top: 6px solid #6b88ad;
+    border-left: 6px solid #6b88ad;
+
+}
+
+.motivacion-intro::after {
+    bottom: 0;
+    right: 0;
+
+    border-bottom: 6px solid #6b88ad;
+    border-right: 6px solid #6b88ad;
+}
+
+.motivacion-intro p{
+    margin:0 !important;
+}
+
+/* ==============================
+   MOTIVACIÓN - GRID
+   ============================== */
+
+.motivacion-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px 20px;
+
+    margin: 20px 80px 0 80px;
+}
+
+
+/* ==============================
+   TARJETAS
+   ============================== */
+
+.motivacion-card-m {
+    position: relative;
+    overflow: hidden;
+    box-sizing: border-box;
+    min-width: 0;
+
+    padding: 10px 20px 30px 20px;
+
+    border: 6px solid #2F4F6F;
+    border-radius: 12px;
+
+    background:
+        linear-gradient(180deg,
+            #edf4fa 0%,
+            #f8fbfd 35%,
+            #ffffff 100%);
+
+    box-shadow: 0 4px 12px rgba(0, 0, 0, .15);
+}
+
+
+/* Todo el contenido queda sobre la imagen */
+.motivacion-card-m>* {
+    position: relative;
+    z-index: 1;
+}
+
+
+/* ==============================
+   TÍTULO
+   ============================== */
+
+.motivacion-tipo {
+    min-height: 40px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 20px;
+
+    text-align: center !important;
+
+    font-size: 0.9em;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+
+    color: #6b88ad;
+
+    border-bottom: 6px solid #c6c312;
+}
+
+
+/* ==============================
+   TEXTO
+   ============================== */
+
+.motivacion-card-m p {
+    margin: 0 !important;
+
+    font-size: .65em !important;
+    line-height: 1.2 !important;
+}
+
+
+
+/* ==============================
+   PREGUNTA / SUBTÍTULO
+   ============================== */
+
+.motivacion-question {
+    margin: 8px 0 10px;
+    padding: 4px 10px;
+
+    text-align: center;
+
+    font-size: .82em;
+    font-weight: 700;
+    letter-spacing: .08em;
+
+    background:
+        linear-gradient(to right,
+            #c3e8f7 0%,
+            rgba(195, 232, 247, 0) 100%);
+
+    border-left: 4px solid #3d4269;
+}
+
+
+/* ==============================
+   LISTAS
+   ============================== */
+
+.motivacion-card-m ul {
+    margin: 0 20px !important;
+    padding: 0 8px !important;
+
+    font-size: .7em !important;
+    line-height: 1 !important;
+}
+
+
+/* ==============================
+   NÚMEROS
+   ============================== */
+
+.motivacion-numero {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 35px;
+    height: 35px;
+
+    margin-right: .35em;
+    border-radius: 50%;
+
+    color: white;
+    background-color: #315777;
+    transform: translateY(-2px);
+
+    font-weight: 700;
+    font-size: .8em;
+}
+
+
+/* ==============================
+   IMÁGENES DECORATIVAS
+   ============================== */
+
+.motivacion-card-m::before {
+    content: "";
+
+    position: absolute;
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+
+    opacity: .30;
+
+    z-index: 0;
+    pointer-events: none;
+}
+
+
+/* 1. Situación actual */
+.motivacion-card-m:nth-child(1)::before {
+    width: 500px;
+    height: 500px;
+
+    right: -100px;
+    bottom: -140px;
+
+    background-image:
+    url("../../../imagenes/Motivacion/actual.svg");
+
+    /* Suaviza la arista izquierda */
+        -webkit-mask-image: linear-gradient(to right,
+                transparent 0%,
+                rgba(0, 0, 0, 0.15) 12%,
+                rgba(0, 0, 0, 0.55) 28%,
+                black 48%,
+                black 100%);
+
+        mask-image: linear-gradient(to right,
+                transparent 0%,
+                rgba(0, 0, 0, 0.15) 12%,
+                rgba(0, 0, 0, 0.55) 28%,
+                black 48%,
+                black 100%);
+}
+
+
+/* 2. Problema */
+.motivacion-card-m:nth-child(2)::before {
+    width: 500px;
+    height: 500px;
+
+    right: -60px;
+    bottom: -120px;
+
+    background-image:
+        url("../../../imagenes/Motivacion/problme.svg");
+}
+
+
+/* 3. Consecuencias */
+.motivacion-card-m:nth-child(3)::before {
+    width: 450px;
+    height: 450px;
+
+    right: -100px;
+    bottom: -140px;
+
+    background-image:
+        url("../../../imagenes/Motivacion/concecuencia.svg");
+}
+
+
+/* 4. Oportunidad */
+.motivacion-card-m:nth-child(4)::before {
+    width: 400px;
+    height: 400px;
+
+    right: -40px;
+    bottom: -80px;
+
+    background-image:
+        url("../../../imagenes/Motivacion/oportunidad.svg");
+}
