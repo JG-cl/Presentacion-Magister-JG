@@ -1,0 +1,156 @@
+/* =====================================================
+   Extracción y superposición slide
+===================================================== */
+
+.columns-extract-main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+
+    width: 90%;
+    margin: 50px auto 0 auto;
+
+    font-size: 0.8em;
+    align-items: stretch;
+}
+
+.columns-extract-sub {
+    min-width: 0;
+    box-sizing: border-box;
+
+    padding: 0;
+
+    background: #f7f9fb;
+
+    border: 4px solid #285b7c;
+    border-radius: 9px;
+
+    box-shadow: 0 7px 14px rgba(0, 0, 0, 0.10);
+
+    overflow: hidden;
+}
+
+.columns-extract-sub p {
+    margin: 0 !important;
+}
+
+/* =====================================================
+   fuente
+===================================================== */
+
+.fuente-extraccion p {
+    margin: 0 !important;
+    line-height: 1.1 !important;
+}
+
+.fuente-extraccion {
+    width: 90%;
+    display: inline-block;
+
+    font-style: italic;
+    font-size: 0.7em;
+
+    margin: 20px 0px 20px 20px;
+
+    padding: 10px 18px;
+
+    border-left: 6px solid #6b88ad;
+    background: linear-gradient(to right,
+            #e1e1e1 0%,
+            #e1e1e1 70%,
+            transparent 100%);
+}
+
+/* =====================================================
+   svg
+===================================================== */
+.reveal .svg-layers {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100% !important;
+    }
+  
+
+
+
+/* =====================================================
+   Columna Desc proceso
+===================================================== */
+.reveal .columns-extract-sub-2{
+    
+    background: #fafbfd;
+    border-left: 5px solid #6b88ad;
+    border-bottom: 5px solid #d9d9d9;
+    border-radius: 6px;
+
+    padding: 10px 0px;
+
+    width: 100%;
+    max-width: auto;
+
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.16);
+
+    font-size: 0.9em;
+    line-height: 1;
+
+    color: #1f2d3d;
+
+}
+
+.reveal .columns-extract-sub-2 p {
+    margin-left: 20px !important;
+    line-height: 1.2 !important;
+    text-align: left;
+
+}
+
+.reveal .columns-extract-sub-2 ul{
+    margin-left: 60px !important;
+    margin-right: 0px !important;
+}
+
+/* =====================================================
+   svg superposicion
+===================================================== */
+.reveal .svg-superposicion {
+    display: block;
+    width: 80% !important;
+    height: auto !important;
+    margin: 20px auto !important;
+}
+
+/* =====================================================
+   Caja descripcion
+===================================================== */
+
+.extract-comment-box p {
+    margin: 0 !important;
+}
+
+
+.extract-comment-box {
+    background-color: #e8f0f6;
+
+    border: 4px solid #6b88ad;
+    border-radius: 2px;
+
+    padding: 14px 28px;
+
+    margin: 20px auto 10px auto;
+
+    width: fit-content;
+    max-width: 90%;
+
+    box-sizing: border-box;
+
+    color: #1f2d3d;
+
+    font-style: italic;
+    font-size: 0.95em;
+    line-height: 1.35;
+
+    text-align: center;
+
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.28);
+}

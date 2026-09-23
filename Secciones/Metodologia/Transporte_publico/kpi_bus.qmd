@@ -1,0 +1,80 @@
+# Metodología {menu-title="KPI de Cobertura $\big(KPI^{\text{Cobertura}}_h\big)$"}
+
+::: {.subtitle}
+KPI de Cobertura $\big(KPI^{\text{Cobertura}}_h\big)$
+:::
+
+::: {.metodo-intro-bus}
+
+Evalúa la **correspondencia temporal entre la presencia relativa de población y las condiciones del servicio de buses**.
+
+:::
+
+:::: {.column-kpi-bus-main}
+
+::: {.column-kpi-bus-sub width="50%"}
+
+::: {.kpi-bus-title}
+
+Construcción del indicador
+
+:::
+
+::: {.kpi-bus-box}
+
+$$
+KPI^{\text{Cobertura}}_h
+=
+P^{\text{float}}_h
+\cdot
+S^{\text{frec}}_h
+$$
+
+:::
+
+::: {.kpi-desc-box}
+
+- Toma valores entre **0 y 1**.
+- Valores altos indican coincidencia entre **alta presencia relativa de población** y **buenas condiciones de servicio**.
+- **Integra en una única medida** la presencia relativa de población y las condiciones del servicio.
+
+:::
+
+:::
+
+::: {.column-kpi-bus-sub width="50%"}
+
+::: {.kpi-bus-title}
+
+Desbalance servicio–población
+
+:::
+
+::: {.kpi-bus-box}
+
+$$
+D^{PS}_h
+=
+S^{\text{frec}}_h
+-
+P^{\text{float}}_h
+\\[12pt]
+\begin{cases}
+D^{PS}_h > 0 & \text{Servicio > Población}\\
+D^{PS}_h = 0 & \text{Equilibrio}\\
+D^{PS}_h < 0 & \text{Población > Servicio}
+\end{cases}
+$$
+
+:::
+
+::: {.kpi-desc-box}
+
+- Complementa la interpretación del KPI.
+- Valores próximos a **0** indican mayor proximidad entre ambos componentes.
+
+::: 
+
+:::
+
+::::

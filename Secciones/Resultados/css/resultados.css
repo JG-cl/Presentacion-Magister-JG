@@ -1,0 +1,467 @@
+/* ============================================================
+   RESULTADOS — LAYOUT GENERAL
+   ============================================================ */
+
+.columns-resultados-main {
+    display: grid !important;
+    grid-template-columns: 35% 65% !important;
+
+    width: 94% !important;
+
+    height: auto !important;
+    margin: 16px auto 0 auto !important;
+    padding: 0 !important;
+    gap: 20px !important;
+
+    align-items: stretch !important;
+}
+
+
+/* ============================================================
+   COLUMNA IZQUIERDA — RESULTADO PRINCIPAL
+   ============================================================ */
+
+.columns-resultados-text {
+    width: 100% !important;
+    height: 100% !important;
+
+    box-sizing: border-box;
+
+    display: flex !important;
+    flex-direction: column !important;
+    /* justify-content: center !important; */
+
+    margin: 0 !important;
+
+    /* Más espacio interno lateral */
+    padding: 30px 30px !important;
+
+    background: #e7f0f6;
+
+    border-left: 5px solid #0f5661;
+    border-radius: 7px;
+
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.09);
+
+    color: #20343d;
+
+    /* Un poco menor para que respire mejor */
+    font-size: 0.9em !important;
+    line-height: 1.27 !important;
+
+    overflow: hidden;
+}
+
+
+.columns-resultados-text p {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+
+.columns-resultados-text strong {
+    color: #123f49;
+    font-weight: 700;
+}
+
+
+/* ============================================================
+   COLUMNA DERECHA — GRÁFICOS
+   ============================================================ */
+
+.columns-resultados-graficos {
+    width: 100% !important;
+    height: 100% !important;
+
+    min-width: 0 !important;
+    max-width: none !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+
+    display: flex !important;
+    align-items: stretch !important;
+    justify-content: stretch !important;
+
+    box-sizing: border-box;
+}
+
+
+/* ============================================================
+   TARJETA PRINCIPAL DE LOS GRÁFICOS
+   ============================================================ */
+
+.resultado-fila {
+    position: relative !important;
+
+    width: 100% !important;
+    height: 100% !important;
+
+    box-sizing: border-box;
+
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    margin: 0 !important;
+
+    /* espacio para Acceso 1 / Acceso 2 */
+    padding: 5px 6px 8px 42px !important;
+
+    border: 3px solid #285b7c;
+    border-radius: 9px;
+
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.11);
+
+    background:
+        linear-gradient(to bottom,
+            #f7fafc 0%,
+            #f7fafc 25%,
+            #edf4f8 50%,
+            #edf4f8 100%);
+
+    /*
+      IMPORTANTE:
+      no cortar la salida de matplotlib
+    */
+    overflow: visible !important;
+}
+
+
+/* ============================================================
+   LÍNEA DIVISORIA ENTRE ACCESO 1 Y ACCESO 2
+   ============================================================ */
+
+/* .resultado-fila::after {
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    right: 0;
+    top: 50%;
+
+    height: 1px;
+
+    background: rgba(40, 91, 124, 0.20);
+
+    z-index: 1;
+
+    pointer-events: none;
+} */
+
+
+/* ============================================================
+   ETIQUETA ACCESO 1
+   ============================================================ */
+
+.resultado-fila::before {
+    content: "Acceso 1";
+
+    position: absolute;
+
+    left: -10px;
+    top: 25%;
+
+    transform:
+        translateY(-30%) rotate(270deg);
+
+    transform-origin: center;
+
+    z-index: 5;
+
+    color: #285b7c;
+
+    font-size: 0.8em;
+    font-weight: 700;
+
+    white-space: nowrap;
+
+    letter-spacing: 0.2px;
+}
+
+
+/* ============================================================
+   ACCESO 2
+   Necesitamos generar una segunda etiqueta.
+   La colocamos mediante el wrapper del chunk.
+   ============================================================ */
+
+.grafico-resultados {
+    position: relative !important;
+
+    width: 100% !important;
+    height: 100% !important;
+
+    min-width: 0 !important;
+    max-width: none !important;
+
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+
+/* Etiqueta Acceso 2 */
+
+.grafico-resultados::before {
+    content: "Acceso 2";
+
+    position: absolute;
+
+    /*
+       Sale hacia la izquierda del wrapper
+       y entra en el espacio reservado por resultado-fila
+    */
+    left: -50px;
+    top: 72%;
+
+    transform:
+        translateY(-30%) rotate(270deg);
+
+    transform-origin: center;
+
+    z-index: 5;
+
+    color: #285b7c;
+
+    font-size: 0.8em;
+    font-weight: 700;
+
+    white-space: nowrap;
+
+    letter-spacing: 0.2px;
+}
+
+
+/* ============================================================
+   WRAPPERS GENERADOS POR QUARTO
+   ============================================================ */
+
+.resultado-fila .cell {
+    width: 100% !important;
+    height: 100% !important;
+
+    max-width: none !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+
+.resultado-fila .cell-output {
+    width: 100% !important;
+    height: 100% !important;
+
+    max-width: none !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+
+.resultado-fila .cell-output-display {
+    width: 100% !important;
+    height: 100% !important;
+
+    max-width: none !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+
+
+.resultado-fila figure {
+    width: 100% !important;
+    height: 100% !important;
+
+    max-width: none !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+
+
+/* ============================================================
+   IMAGEN MATPLOTLIB
+   ============================================================ */
+
+.resultado-fila img,
+.reveal .resultado-fila img {
+
+    display: block !important;
+
+    /*
+       Que use TODO el ancho disponible
+    */
+    width: 100% !important;
+
+    /*
+       Y pueda usar toda la altura de la tarjeta
+    */
+    height: 100% !important;
+
+    max-width: none !important;
+    max-height: none !important;
+
+    /*
+       No deformar el gráfico
+    */
+    object-fit: contain !important;
+
+    object-position: center !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+
+/* ============================================================
+   LIMPIAR ESPACIOS DE QUARTO
+   ============================================================ */
+
+.resultado-fila p,
+.columns-resultados-graficos p,
+.resultado-fila .quarto-figure,
+.resultado-fila .figure {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+
+/* ============================================================
+   EVITAR LIMITACIONES DE ANCHO DE REVEAL / QUARTO
+   ============================================================ */
+
+.reveal .columns-resultados-main,
+.reveal .columns-resultados-graficos,
+.reveal .resultado-fila,
+.reveal .grafico-resultados,
+.reveal .resultado-fila .cell,
+.reveal .resultado-fila .cell-output,
+.reveal .resultado-fila .cell-output-display {
+    max-width: none !important;
+}
+
+/* ============================================================
+   Resumen Area
+   ============================================================ */
+
+.resumen-area {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.resumen-item {
+    display: grid;
+
+    /* texto | zona fija para A1/A2 */
+    grid-template-columns: minmax(0, 1fr) 77px;
+
+    column-gap: 16px;
+    align-items: center;
+
+    padding: 9px 0;
+
+    border-bottom: 3px solid rgba(40, 91, 124, 0.15);
+    
+}
+
+.resumen-item>span:first-child {
+    font-size: 0.7em;
+    line-height: 1;
+}
+
+.resumen-item:last-child {
+    border-bottom: none;
+}
+
+
+/* ============================================================
+   Columnas A1 / A2
+   ============================================================ */
+
+.accesos {
+    display: grid !important;
+
+    /* A1 | A2 */
+    grid-template-columns: 35px 35px !important;
+    grid-template-rows: 35px !important;
+
+    column-gap: 7px;
+
+    width: 77px;
+    justify-self: end;
+    align-items: center;
+}
+
+
+/* A1 siempre a la izquierda */
+.accesos>.acceso-badge-1 {
+    grid-column: 1 / 2 !important;
+    grid-row: 1 !important;
+}
+
+
+/* A2 siempre a la derecha */
+.accesos>.acceso-badge-2 {
+    grid-column: 2 / 3 !important;
+    grid-row: 1 !important;
+}
+
+
+/* ============================================================
+   Círculos
+   ============================================================ */
+
+/* Badges */
+.acceso-badge {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width:110%;
+    height: 110%;
+
+    box-sizing: border-box;
+    border-radius: 50%;
+
+    background: #285b7c;
+    border: 3px solid #b1b1b1;
+
+    color: white;
+
+    font-size: 0.55em;
+    font-weight: 700;
+    line-height: 1;
+
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.14);
+}
+
+/* ============================================================
+   Resultado inferior
+   ============================================================ */
+
+.resultado-principal {
+    margin-top: 0;
+    padding-top: 18px;
+
+    font-size: 0.8em;
+
+    border-top: 4px solid rgba(40, 91, 124, 0.22);
+}
+
+.resultado-principal strong {
+    color: #173f45;
+}

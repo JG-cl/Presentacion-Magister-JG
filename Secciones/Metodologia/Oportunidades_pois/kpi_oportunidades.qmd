@@ -1,0 +1,209 @@
+# Metodología {menu-title="KPI de Oportunidades urbanas"}
+
+::: {.subtitle}
+
+KPI de Oportunidades urbanas
+
+:::
+
+::: {.oportunidades-intro}
+
+Cuantifica la **proporción ponderada de oportunidades urbanas disponibles**
+durante cada hora respecto de su **potencial total**.
+
+:::
+
+
+:::: {.column-kpi-opor-main}
+
+
+::: {.column-kpi-opor-sub width="50%"}
+
+::: {.kpi-title}
+
+Oportunidades del área de estudio
+
+:::
+
+::: {.oportunidades-svg}
+
+![](imagenes/oportunidades-example.svg)
+
+:::
+
+{{< include Secciones/Metodologia/Oportunidades_pois/bloque_tabla_kpi.qmd >}}
+
+:::
+
+
+::: {.column-kpi-opor-sub width="50%"}
+
+::: {.kpi-title}
+
+Disponibilidad efectiva y potencial
+
+:::
+
+::: {.kpi-opor-contrib}
+
+$$
+\begin{aligned}
+A_{i,h}
+&=
+B^{\mathrm{POI}}_{i,h}
+\cdot
+W^{\mathrm{POI}}_{i,h}
+\cdot
+G_i^{\mathrm{Review}}
+\cdot
+P_i^{\mathrm{time}}
+\\[8pt]
+A^{\mathrm{pot}}_{i,h}
+&=
+W^{\mathrm{POI}}_{i,h}
+\cdot
+G_i^{\mathrm{Review}}
+\cdot
+P_i^{\mathrm{time}}
+\end{aligned}
+$$
+
+:::
+
+::: {.kpi-opor-box}
+
+$$
+KPI^{\mathrm{Opt}}_h
+=
+\frac{
+\displaystyle\sum_{i\in\mathcal I} A_{i,h}
+}{
+\displaystyle\sum_{i\in\mathcal I} A^{\mathrm{pot}}_{i,h}
+}
+$$
+
+:::
+
+::: {.kpi-desc-opor-box}
+
+**$0 \leq KPI_h^{\mathrm{Opt}} \leq 1$**
+
+Valores próximos a **1** indican que una mayor proporción del
+**potencial ponderado de oportunidades está disponible** durante la hora $h$.
+
+:::
+
+:::
+
+
+::::
+
+
+
+
+
+
+<!-- 
+
+
+
+
+:::: {.columns-opor-main}
+
+
+::: {.columns-opor-sub}
+
+::: {.opor-title}
+
+De cada POI al área de estudio
+
+:::
+
+::: {.oportunidades-svg}
+
+![](imagenes/oportunidades-example.svg)
+
+:::
+
+::: {.opor-flow}
+
+Cada POI aporta según:
+
+$$
+B^{\mathrm{POI}}_{i,h}
+\;\cdot\;
+W^{\mathrm{POI}}_{i,h}
+\;\cdot\;
+G_i^{\mathrm{Review}}
+\;\cdot\;
+P_i^{\mathrm{time}}
+$$
+
+:::
+
+:::
+
+
+::: {.columns-opor-sub}
+
+::: {.opor-title}
+
+Disponibilidad efectiva y potencial
+
+:::
+
+::: {.opor-box}
+
+$$
+\begin{aligned}
+A_{i,h}
+&=
+B^{\mathrm{POI}}_{i,h}
+\cdot
+W^{\mathrm{POI}}_{i,h}
+\cdot
+G_i^{\mathrm{Review}}
+\cdot
+P_i^{\mathrm{time}}
+\\[12pt]
+A^{\mathrm{pot}}_{i,h}
+&=
+W^{\mathrm{POI}}_{i,h}
+\cdot
+G_i^{\mathrm{Review}}
+\cdot
+P_i^{\mathrm{time}}
+\end{aligned}
+$$
+
+:::
+
+::: {.opor-kpi-box}
+
+$$
+\boxed{
+KPI^{\mathrm{Opt}}_h
+=
+\frac{
+\displaystyle\sum_{i\in\mathcal I} A_{i,h}
+}{
+\displaystyle\sum_{i\in\mathcal I} A^{\mathrm{pot}}_{i,h}
+}
+}
+$$
+
+:::
+
+::: {.opor-interpretacion}
+
+**$0 \leq KPI_h^{\mathrm{Opt}} \leq 1$**
+
+Valores próximos a **1** indican una mayor disponibilidad de las
+**oportunidades con mayor contribución potencial** durante la hora $h$.
+
+:::
+
+:::
+
+
+:::: -->

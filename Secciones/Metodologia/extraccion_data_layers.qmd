@@ -1,0 +1,71 @@
+# Metodología {menu-title="Extracción y tratamiento de datos geoespaciales"}
+
+::: {.subtitle}
+Extracción y tratamiento de datos geoespaciales
+:::
+
+<img src="imagenes/Extraccion_layers/Data_Layers.svg" class="svg-layers">
+
+<div class="fuente-propia"></div>
+
+# Metodología {menu-title="Superposición espacial"}
+
+::: {.subtitle}
+
+Superposición espacial
+
+:::
+
+:::: {.columns-extract-main}
+
+::: {.columns-extract-sub width="50%"}
+
+<img src="imagenes/Extraccion_layers/Superposicion.svg" class="svg-superposicion">
+
+::: {.extract-comment-box}
+
+Se asume una **distribución espacial uniforme** del atributo dentro de cada celda H3.
+
+:::
+
+::: {.fuente-extraccion}
+
+Fuente: Elaboración propia basada en interpolación areal clásica [@goodchild_lam_1980].
+
+:::
+
+:::
+
+::: {.columns-extract-sub-2 width="50%"}
+
+
+Sea:
+
+- $A_g$: área total de la celda H3  
+- $A_{I,g}$: área de intersección con el área de estudio  
+- $X_g$: atributo de población flotante  
+
+**Ponderación por área de intersección:**
+
+$$
+X_g^{*}
+=
+X_g
+\frac{A_{I,g}}{A_g}
+$$
+
+**Estimación total en el área de estudio:**
+
+$$
+X_{\text{total}}
+=
+\sum_{g \in G_I}
+X_g
+\frac{A_{I,g}}{A_g}
+$$
+
+
+
+:::
+
+::::

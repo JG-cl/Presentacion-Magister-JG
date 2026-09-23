@@ -1,0 +1,25 @@
+
+# Metodología {menu-title="Metodología - Peso temporal del POI"}
+
+::: {.subtitle}
+Peso temporal del POI
+:::
+
+> “No basta con que **exista una oportunidad**, esta debe estar **disponible en el momento en que el usuario puede acceder a ella**.”<br><br>
+> “Un supermercado abierto solo **2 horas** tiene **menor accesibilidad efectiva**.”
+
+**Pesos temporales definidos manualmente: **
+```{python}
+#| classes: json
+import json
+
+with open("Data/poi_weights_temporal.json", "r", encoding="utf-8") as f:
+    poi_w_temporal = json.load(f)
+
+for key, value in poi_w_temporal.items():
+    print(f"{key} | Hora: {value.get("hora")} \n")
+```
+
+::: {.quote-box style="margin-left: 80px;"}
+Se considera la disponibilidad temporal de las actividades siguiendo [@NEUTENS2012128].
+:::

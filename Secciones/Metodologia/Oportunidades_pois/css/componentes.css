@@ -1,0 +1,214 @@
+.componentes-intro {
+    width: 93%;
+    margin: 10px auto 10px auto;
+    padding: 4px 0 4px 18px;
+
+    border-left: 5px solid #7898bd;
+
+    color: #263b43;
+    font-size: 0.7em;
+    line-height: 1.25;
+
+    text-align: left;
+}
+
+.componentes-intro p {
+    margin: 0 !important;
+}
+
+
+/* ==========================================
+   CONTENEDOR GENERAL
+   ========================================== */
+
+.poi-components {
+    width: 95%;
+    margin: 12px auto 0 auto;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    font-size: 0.68em;
+}
+
+
+/* ==========================================
+   CADA COMPONENTE
+   ========================================== */
+
+.poi-component {
+    display: grid;
+    grid-template-columns: 15% 52% 33%;
+    align-items: stretch;
+
+    min-height: 112px;
+
+    background: linear-gradient(90deg,
+            #f8fbfd 0%,
+            #edf4f8 100%);
+
+    border: 2px solid #285b7c;
+    border-radius: 7px;
+
+    box-sizing: border-box;
+    overflow: hidden;
+
+    box-shadow: 0 4px 9px rgba(0, 0, 0, 0.08);
+}
+
+/* Mueve el G mas a la izq */
+.poi-component:nth-child(2) .poi-formula {
+    transform: translateX(-40px);
+}
+
+/* ==========================================
+   TÍTULO IZQUIERDO
+   ========================================== */
+
+.poi-component-title {
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    box-sizing: border-box;
+    padding: 10px 12px;
+
+    background: #e7eef5;
+    border-right: 2px solid #7898bd;
+
+    color: #263b43;
+
+    text-align: center;
+    font-size: 0.98em;
+    font-weight: 700;
+    line-height: 1.15;
+}
+
+.poi-component-title p {
+    margin: 0 !important;
+}
+
+
+/* ==========================================
+   FÓRMULA
+   ========================================== */
+
+.poi-formula {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    min-width: 0;
+    box-sizing: border-box;
+
+    padding: 4px 10px !important;
+
+    text-align: center;
+}
+
+.poi-formula p {
+    margin: 0 !important;
+}
+
+/* evita que MathJax quede demasiado grande */
+.poi-formula .MathJax {
+    font-size: 0.88em !important;
+}
+
+
+
+/* ==========================================
+   DESCRIPCIÓN
+   ========================================== */
+
+.poi-component-desc {
+    display: flex;
+    align-items: center;
+
+    box-sizing: border-box;
+
+    padding: 10px 16px;
+
+    border-left: 2px solid #b8cad8;
+
+    line-height: 1.25;
+}
+
+.poi-component-desc p {
+    margin: 0 !important;
+}
+
+.poi-component-desc .citation {
+    font-size: 0.85em !important;
+}
+
+
+/* ==========================================
+   BLOQUE W
+   ========================================== */
+
+.poi-component:last-child {
+    background: linear-gradient(90deg,
+            #f2f8f4 0%,
+            #dceee5 100%);
+}
+
+.poi-component:last-child .poi-component-title {
+    background: #dcece4;
+    border-right-color: #5e8c75;
+}
+
+
+/* ==========================================
+   RESUMEN INFERIOR
+   ========================================== */
+
+.poi-footer {
+    width: 82%;
+    margin: 10px auto 0 auto;
+
+    box-sizing: border-box;
+
+    padding: 6px 14px;
+
+    background: #eeeeee;
+    border-left: 4px solid #7898bd;
+
+    text-align: center;
+    font-size: 0.61em;
+    font-style: italic;
+}
+
+.poi-footer p {
+    margin: 0 !important;
+}
+
+
+/* =====================================================
+   Pesos temporales
+===================================================== */
+.quote-box p {
+    margin: 0 !important;
+
+    line-height: 1.1 !important;
+}
+
+.quote-box {
+    display: inline-block;
+    /* 
+    background-color: #e1e1e1; */
+    background: linear-gradient(to right, #e1e1e1 0%, #e1e1e1 70%, transparent 100%);
+
+    font-style: italic;
+    font-size: 0.8em;
+
+    margin-top: 20px;
+    margin-left: 100px;
+
+    padding: 10px 18px;
+
+    border-left: 6px solid #6b88ad;
+}

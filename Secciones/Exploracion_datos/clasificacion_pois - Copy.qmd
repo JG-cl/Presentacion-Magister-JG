@@ -1,0 +1,184 @@
+# Exploración Datos {menu-title="Exploración Datos - Clasificacíon POIS"}
+
+::: {.subtitle}
+Clasificacíon Point Of Interest
+:::
+
+
+:::: {.clasificacion-main}
+
+::: {.clasificacion-sub width="50%"}
+::: {.dato-tipo}
+Área baja accesibilidad
+:::
+
+```{python}
+#| echo: false
+#| class: fig-class
+from pathlib import Path
+from scrips import clasificador_poi, grafico_categorias,poi_total_area, wheelchair_entrance_total,coverage_populartimes
+import json
+
+main_path = Path.cwd().resolve()
+data_place_file = main_path / "Data" / "Area Baja" / "Data Places" / "01KTMJT07VW9.json"
+data_populartimes_file = main_path / "Data" / "Area Baja" / "Data Populartimes" / "01KTMJT07VW9.json"
+
+with open(data_place_file, "r", encoding="utf-8") as f:
+    data_places = json.load(f)
+
+with open(data_populartimes_file, "r", encoding="utf-8") as f:
+    data_populartimes = json.load(f)
+
+poly_id = list(data_places.keys())[0]
+
+clasificador = clasificador_poi(data_places=data_places[poly_id])
+
+fig = grafico_categorias(clasificador["cat_count"])
+fig
+```
+
+::: {.area-poi-desc}
+```{python}
+#| echo: false
+#| output: asis
+
+n_pois = poi_total_area(data_places=data_places, poly_id=poly_id)
+n_wheelchair = wheelchair_entrance_total(clasificador["cat_access"])
+pop_coverage = coverage_populartimes(
+    data_places=data_places,
+    data_populartimes=data_populartimes,
+    poly_id=poly_id
+)
+
+texto_area = f"""
+<div class="area-poi-desc-box">
+🏢 <b>POI identificados:</b> {n_pois}<br>
+📈 <b>Cobertura PopularTimes:</b> {pop_coverage["Total PopularTimes"]} ({pop_coverage["Proporcion"]:.0f}%)<br>
+♿ <b>Acceso silla de ruedas:</b> {n_wheelchair}
+</div>
+"""
+
+print(texto_area)
+```
+:::
+
+:::
+
+
+::: {.clasificacion-sub width="50%"}
+::: {.dato-tipo}
+Área intermedia accesibilidad 
+:::
+
+```{python}
+#| echo: false
+#| class: fig-class-alta
+data_place_file = main_path / "Data" / "Area Intermedia" / "Data Places" / "01KVKN691ZTZ.json"
+data_populartimes_file = main_path / "Data" / "Area Intermedia" / "Data Populartimes" / "01KVKN691ZTZ.json"
+
+with open(data_place_file, "r", encoding="utf-8") as f:
+    data_places = json.load(f)
+
+with open(data_populartimes_file, "r", encoding="utf-8") as f:
+    data_populartimes = json.load(f)
+
+poly_id = list(data_places.keys())[0]
+
+clasificador = clasificador_poi(data_places=data_places[poly_id])
+
+fig = grafico_categorias(clasificador["cat_count"])
+# fig.set_size_inches(10, 8)
+
+fig
+```
+
+::: {.area-poi-desc}
+```{python}
+#| echo: false
+#| output: asis
+
+n_pois = poi_total_area(data_places=data_places, poly_id=poly_id)
+n_wheelchair = wheelchair_entrance_total(clasificador["cat_access"])
+pop_coverage = coverage_populartimes(
+    data_places=data_places,
+    data_populartimes=data_populartimes,
+    poly_id=poly_id
+)
+
+texto_area = f"""
+<div class="area-poi-desc-box">
+🏢 <b>POI identificados:</b> {n_pois}<br>
+📈 <b>Cobertura PopularTimes:</b> {pop_coverage["Total PopularTimes"]} ({pop_coverage["Proporcion"]:.0f}%)<br>
+♿ <b>Acceso silla de ruedas:</b> {n_wheelchair}
+</div>
+"""
+
+print(texto_area)
+```
+:::
+:::
+
+::::
+
+
+# Exploración Datos {menu-title="Exploración Datos - Clasificacíon POIS 2"}
+
+::: {.subtitle}
+Clasificacíon Point Of Interest
+:::
+
+:::: {.clasificacion-main}
+
+::: {.clasificacion-sub width="60%"}
+::: {.dato-tipo}
+Área alta accesibilidad
+:::
+
+```{python}
+#| echo: false
+#| class: fig-class-alta
+data_place_file = main_path / "Data" / "Area Alta" / "Data Places" / "01KTYZJYNBDM.json"
+data_populartimes_file = main_path / "Data" / "Area Alta" / "Data Populartimes" / "01KTYZJYNBDM.json"
+
+with open(data_place_file, "r", encoding="utf-8") as f:
+    data_places = json.load(f)
+
+with open(data_populartimes_file, "r", encoding="utf-8") as f:
+    data_populartimes = json.load(f)
+
+poly_id = list(data_places.keys())[0]
+
+clasificador = clasificador_poi(data_places=data_places[poly_id])
+
+fig = grafico_categorias(clasificador["cat_count"])
+fig.set_size_inches(10, 8)
+
+fig
+```
+
+::: {.area-poi-desc}
+```{python}
+#| echo: false
+#| output: asis
+
+n_pois = poi_total_area(data_places=data_places, poly_id=poly_id)
+n_wheelchair = wheelchair_entrance_total(clasificador["cat_access"])
+pop_coverage = coverage_populartimes(
+    data_places=data_places,
+    data_populartimes=data_populartimes,
+    poly_id=poly_id
+)
+
+texto_area = f"""
+<div class="area-poi-desc-box">
+🏢 <b>POI identificados:</b> {n_pois}<br>
+📈 <b>Cobertura PopularTimes:</b> {pop_coverage["Total PopularTimes"]} ({pop_coverage["Proporcion"]:.0f}%)<br>
+♿ <b>Acceso silla de ruedas:</b> {n_wheelchair}
+</div>
+"""
+
+print(texto_area)
+```
+:::
+:::
+::::

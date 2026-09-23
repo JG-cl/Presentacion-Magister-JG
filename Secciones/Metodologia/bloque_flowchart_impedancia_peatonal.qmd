@@ -1,0 +1,84 @@
+::: {.impedancia-flujos}
+
+
+<!-- POI -->
+
+::: {.impedancia-flujo}
+
+::: {.impedancia-flujo-tipo}
+Point of Interest
+:::
+
+::: {.impedancia-flujo-origen}
+**POI**
+:::
+
+::: {.impedancia-flecha}
+↓
+:::
+
+::: {.impedancia-fuente}
+Google Distance Matrix
+:::
+
+::: {.impedancia-flecha}
+↓
+:::
+
+::: {.impedancia-tiempo}
+$t_i$
+:::
+
+:::
+
+
+<!-- POBLACIÓN -->
+
+::: {.impedancia-flujo}
+
+::: {.impedancia-flujo-tipo}
+Población flotante
+:::
+
+::: {.impedancia-flujo-origen}
+**H3**
+:::
+
+::: {.impedancia-flecha}
+↓
+:::
+
+::: {.impedancia-fuente}
+OpenStreetMap
+:::
+
+::: {.impedancia-flecha}
+↓
+:::
+
+::: {.impedancia-tiempo}
+$t_g^{\mathrm{walk}}$
+:::
+
+:::
+
+:::
+
+
+<!-- CONVERGENCIA DE AMBOS TIEMPOS -->
+
+```{=html}
+<div class="impedancia-convergencia">
+    <span class="conv-lateral conv-izq"></span>
+    <span class="conv-lateral conv-der"></span>
+    <span class="conv-centro"></span>
+</div>
+```
+
+
+::: {.impedancia-destino}
+**Acceso de transporte público**
+:::
+
+
+

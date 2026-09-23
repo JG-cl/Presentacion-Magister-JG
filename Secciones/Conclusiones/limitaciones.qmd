@@ -1,0 +1,86 @@
+# Limitaciones {menu-title="Limitaciones de la metodología"}
+
+::: {.subtitle}
+Limitaciones de la metodología
+:::
+
+::: {.limitaciones}
+
+::: {.limitacion-card}
+
+::: {.limitacion-title}
+Calidad de los datos de POI
+:::
+
+::: {.limitacion-text}
+Cobertura, clasificación y horarios dependen de Google Places, con posibles **<span class="dato-limitacion">registros múltiples</span>** por institución.
+:::
+
+:::
+
+
+::: {.limitacion-card}
+
+::: {.limitacion-title}
+Pesos de las oportunidades urbanas
+:::
+
+::: {.limitacion-text}
+Las ponderaciones funcionales y temporales se basan en **<span class="dato-limitacion">juicio del investigador</span>**, no en preferencias observadas.
+:::
+
+:::
+
+
+::: {.limitacion-card}
+
+::: {.limitacion-title}
+Población flotante
+:::
+
+::: {.limitacion-text}
+Datos de Entel (**<span class="dato-limitacion">~33 % del mercado</span>**), con posible sesgo territorial. Representan presencia relativa, no demanda, y cubren 07:00–22:00.
+:::
+
+:::
+
+
+::: {.limitacion-card}
+
+::: {.limitacion-title}
+Tiempos de caminata
+:::
+
+::: {.limitacion-text}
+Representan las condiciones de la **<span class="dato-limitacion">red peatonal al momento de la estimación</span>**.
+:::
+
+:::
+
+
+::: {.limitacion-card}
+
+::: {.limitacion-title}
+Calibración de los niveles de servicio
+:::
+
+::: {.limitacion-text}
+Los umbrales de Jenks responden al **<span class="dato-limitacion">contexto estudiado</span>** y no son directamente generalizables.
+:::
+
+:::
+
+
+::: {.limitacion-card}
+
+::: {.limitacion-title}
+Casos de estudio
+:::
+
+::: {.limitacion-text}
+La aplicación considera **<span class="dato-limitacion">tres áreas</span>**; incorporar más áreas y períodos permitiría evaluar su robustez y generalización.
+:::
+
+:::
+
+:::

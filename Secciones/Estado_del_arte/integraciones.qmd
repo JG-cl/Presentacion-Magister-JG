@@ -1,0 +1,49 @@
+# Estado del arte {menu-title="Integración de la dimensión temporal"}
+
+::: {.subtitle}
+Integración de la dimensión temporal
+:::
+
+:::: {.integracion-literatura}
+
+::: {.integracion-card}
+
+::: {.integracion-tipo}
+Accesibilidad dinámica
+:::
+
+::: {.integracion-titulo}
+Condiciones variables de accesibilidad
+:::
+
+Las **condiciones de la red** y la **atractividad de los destinos** pueden variar durante el día, generando distintos niveles de accesibilidad según el momento [@moyagomez2018dynamic].
+
+::: {.integracion-relacion}
+**RED** &nbsp; ↔ &nbsp; **OPORTUNIDADES**
+:::
+
+:::
+
+::: {.integracion-card}
+
+::: {.integracion-tipo}
+Oportunidades dinámicas
+:::
+
+::: {.integracion-titulo}
+Disponibilidad temporal
+:::
+
+Las oportunidades urbanas no permanecen constantes durante el día: su **disponibilidad y actividad** dependen del momento en que son observadas [@barrena2025].
+
+::: {.integracion-relacion}
+**OPORTUNIDADES** &nbsp; ↔ &nbsp; **TIEMPO**
+:::
+
+:::
+
+::::
+
+::: {.integracion-conclusion}
+La incorporación de la **dimensión temporal** permite representar una ciudad cuyas condiciones de acceso y actividad cambian a lo largo del día.
+:::

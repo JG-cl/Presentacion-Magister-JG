@@ -1,0 +1,282 @@
+/* =========================================================
+   CONTENEDOR GENERAL
+   ========================================================= */
+
+.closing-cointeiner {
+    position: relative;
+    width: 92%;
+    margin: 75px auto 0 auto !important;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* =========================================================
+   PERGAMINO
+   ========================================================= */
+
+.closing-statement-1 {
+    position: relative;
+
+    width: 86%;
+    margin: 0 auto !important;
+
+    padding: 52px 90px 56px 90px;
+    box-sizing: border-box;
+
+    color: #263b43;
+
+    font-family: "Baskerville", "Libre Baskerville", Georgia, serif;
+    font-size: 1.5em;
+    font-style: italic;
+    font-weight: 400;
+    font-variant: small-caps;
+
+    letter-spacing: .10em;
+    line-height: 1.22;
+    text-align: center;
+
+    /* =========================================
+       TEXTURA DEL PAPEL
+       ========================================= */
+
+    background:
+        /* manchas suaves */
+        radial-gradient(ellipse at 8% 20%,
+            rgba(170, 130, 70, .12) 0%,
+            transparent 24%),
+
+        radial-gradient(ellipse at 92% 75%,
+            rgba(170, 130, 70, .12) 0%,
+            transparent 25%),
+
+        radial-gradient(ellipse at 50% 45%,
+            rgba(255, 255, 255, .95) 0%,
+            rgba(250, 247, 235, .96) 48%,
+            rgba(232, 223, 197, .92) 100%),
+
+        /* papel base */
+        linear-gradient(180deg,
+            #eee8d5 0%,
+            #fbf8ed 12%,
+            #fffdf6 50%,
+            #f8f3e5 88%,
+            #ddd2b4 100%);
+
+    /* borde envejecido */
+    border-top: 2px solid rgba(157, 128, 77, .22);
+    border-bottom: 2px solid rgba(128, 101, 58, .26);
+
+    border-radius: 4px;
+
+    /* profundidad */
+    box-shadow:
+        0 20px 22px -12px rgba(45, 48, 50, .28),
+        0 8px 12px -8px rgba(45, 48, 50, .18),
+        inset 0 10px 16px rgba(154, 126, 75, .07),
+        inset 0 -12px 18px rgba(133, 103, 57, .10);
+
+    z-index: 1;
+}
+
+
+/* Texto siempre sobre el papel */
+
+.closing-statement-1 p {
+    position: relative;
+    z-index: 5;
+    margin: 0 !important;
+}
+
+
+/* =========================================================
+   ROLLO IZQUIERDO
+   ========================================================= */
+
+.closing-statement-1::before {
+    content: "";
+
+    position: absolute;
+
+    left: -34px;
+    top: -15px;
+
+    width: 55px;
+    height: calc(100% + 30px);
+
+    border-radius:
+        52% 18% 18% 52% / 10% 7% 7% 10%;
+
+    background:
+
+        /* brillo central */
+        linear-gradient(90deg,
+            rgba(120, 91, 48, .24) 0%,
+            rgba(235, 223, 187, .90) 18%,
+            rgba(255, 252, 235, 1) 48%,
+            rgba(224, 213, 178, .95) 76%,
+            rgba(126, 96, 52, .22) 100%);
+
+    border-left: 1px solid rgba(121, 91, 48, .24);
+    border-right: 1px solid rgba(121, 91, 48, .15);
+
+    box-shadow:
+        -10px 13px 15px rgba(0, 0, 0, .18),
+        5px 0 9px rgba(91, 69, 37, .13),
+        inset 8px 0 10px rgba(255, 255, 255, .40),
+        inset -8px 0 10px rgba(100, 75, 40, .14);
+
+    z-index: 3;
+}
+
+
+/* =========================================================
+   ROLLO DERECHO
+   ========================================================= */
+
+.closing-statement-1::after {
+    content: "";
+
+    position: absolute;
+
+    right: -34px;
+    top: -15px;
+
+    width: 55px;
+    height: calc(100% + 30px);
+
+    border-radius:
+        18% 52% 52% 18% / 7% 10% 10% 7%;
+
+    background:
+        linear-gradient(90deg,
+            rgba(126, 96, 52, .22) 0%,
+            rgba(224, 213, 178, .95) 24%,
+            rgba(255, 252, 235, 1) 52%,
+            rgba(235, 223, 187, .90) 82%,
+            rgba(120, 91, 48, .24) 100%);
+
+    border-left: 1px solid rgba(121, 91, 48, .15);
+    border-right: 1px solid rgba(121, 91, 48, .24);
+
+    box-shadow:
+        10px 13px 15px rgba(0, 0, 0, .18),
+        -5px 0 9px rgba(91, 69, 37, .13),
+        inset -8px 0 10px rgba(255, 255, 255, .40),
+        inset 8px 0 10px rgba(100, 75, 40, .14);
+
+    z-index: 3;
+}
+
+/* =========================================================
+   COMILLAS DECORATIVAS
+   ========================================================= */
+
+.closing-quote {
+    position: absolute;
+
+    left: -40px;
+    top: -60px;
+
+    z-index: 6;
+
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 5.5em;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1;
+
+    color: rgba(120, 152, 189, .58);
+
+    pointer-events: none;
+
+    /* pequeño volumen */
+    text-shadow:
+        0 2px 2px rgba(255, 255, 255, .65),
+        0 3px 5px rgba(40, 91, 124, .08);
+}
+
+/* =========================================================
+   FRASE INFERIOR
+   ========================================================= */
+
+.closing-statement-2 {
+    position: relative;
+
+    width: 80%;
+    margin: 50px auto 0 auto !important;
+
+    box-sizing: border-box;
+
+    padding: 22px 42px;
+
+    color: #33474f;
+
+    font-size: .9em;
+    line-height: 1.35;
+    text-align: center;
+
+    background:
+        linear-gradient(90deg,
+            transparent 0%,
+            rgba(210, 225, 237, .12) 6%,
+            rgba(210, 225, 237, .55) 18%,
+            rgba(220, 232, 241, .88) 35%,
+            rgba(226, 236, 244, .95) 50%,
+            rgba(220, 232, 241, .88) 65%,
+            rgba(210, 225, 237, .55) 82%,
+            rgba(210, 225, 237, .12) 94%,
+            transparent 100%);
+}
+
+/* línea superior con fade */
+
+.closing-statement-2::before {
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 4px;
+
+    background:
+        linear-gradient(90deg,
+            transparent 0%,
+            rgba(120, 152, 189, .25) 8%,
+            #7898bd 25%,
+            #7898bd 75%,
+            rgba(120, 152, 189, .25) 92%,
+            transparent 100%);
+}
+
+
+/* línea inferior con fade */
+
+.closing-statement-2::after {
+    content: "";
+
+    position: absolute;
+
+    bottom: 0;
+    left: 0;
+
+    width: 100%;
+    height: 4px;
+
+    background:
+        linear-gradient(90deg,
+            transparent 0%,
+            rgba(120, 152, 189, .25) 8%,
+            #7898bd 25%,
+            #7898bd 75%,
+            rgba(120, 152, 189, .25) 92%,
+            transparent 100%);
+}
+
+
+.closing-statement-2 p {
+    margin: 0 !important;
+}

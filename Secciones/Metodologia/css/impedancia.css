@@ -1,0 +1,290 @@
+/* =====================================================
+   INTRODUCCIÓN
+===================================================== */
+
+.impedancia-intro {
+    width: 88%;
+    box-sizing: border-box;
+
+    margin: 0px auto 0 auto;
+    padding: 4px 0 4px 18px;
+
+    border-left: 5px solid #7898bd;
+
+    color: #263b43;
+
+    font-size: 0.78em;
+    line-height: 1.15;
+    text-align: left;
+}
+
+.impedancia-intro p {
+    margin: 0 !important;
+    line-height: inherit !important;
+}
+
+
+/* =====================================================
+   CONTENEDOR PRINCIPAL
+===================================================== */
+
+.column-impedancia-main {
+    display: grid;
+    grid-template-columns: 0.8fr 1.14fr;
+
+    gap: 30px;
+
+    width: 90%;
+    margin: 10px auto 0 auto;
+
+    align-items: stretch;
+}
+
+
+/* =====================================================
+   TARJETAS
+===================================================== */
+.column-impedancia-sub {
+    position: relative;
+
+    min-width: 0;
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+
+    padding: 4px 14px;
+
+    background: linear-gradient(180deg,
+            #f8fbfd 0%,
+            #f3f7fa 100%);
+
+    border: 3px solid #285b7c;
+    border-radius: 8px;
+
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.10);
+
+    overflow: hidden;
+}
+
+
+/* =====================================================
+   TÍTULOS DE TARJETA
+===================================================== */
+
+.subtitulo-columna-impedancia {
+    width: 100%;
+    box-sizing: border-box;
+
+    margin: -4px 0 10px 0;
+    padding: 8px 10px;
+
+    background: #e7eef5;
+
+    border-bottom: 3px solid #7898bd;
+    border-radius: 5px;
+
+    color: #263b43;
+
+    font-size: 0.7em;
+    font-weight: 700;
+    line-height: 1.05;
+
+    text-align: center;
+}
+
+.subtitulo-columna-impedancia p {
+    margin: 0 !important;
+}
+
+/* =====================================================
+   flowchart
+===================================================== */
+.impedancia-diagrama {
+    margin-top: -20px;
+    display: flex;
+    justify-content: center;
+}
+
+.impedancia-diagrama p {
+    margin: 0 !important;
+}
+
+.impedancia-diagrama img {
+    width: 100% !important;
+    max-width: none !important;
+    height: auto !important;
+}
+
+
+/* =====================================================
+   DERECHA — GRÁFICO
+===================================================== */
+
+.matplot-p {
+    width: 100%;
+
+    margin: -5px auto -8px auto !important;
+    padding: 0 !important;
+}
+
+.matplot-p p {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.matplot-p img,
+.matplot-p svg {
+    display: block;
+
+    width: 100%;
+    height: auto;
+
+    margin: 0 auto !important;
+}
+
+/* Quitar espacio que Quarto agrega alrededor de la figura */
+.reveal .column-impedancia-sub.impedancia-funcion .quarto-figure {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+/* Quarto suele crear además un <figure> interno */
+.reveal .column-impedancia-sub.impedancia-funcion .quarto-figure>figure {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+/* Imagen generada por matplotlib */
+.reveal .column-impedancia-sub.impedancia-funcion .quarto-figure img {
+    display: block !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+/* =====================================================
+   FORMULACIÓN DE LA IMPEDANCIA
+===================================================== */
+.impedancia-formulacion {
+    background: rgba(255, 255, 255, 0.88);
+
+    border: 1px solid rgba(120, 152, 189, 0.30);
+    border-left: 5px solid #7898bd;
+    border-radius: 5px;
+
+    box-shadow:
+            0 5px 14px rgba(0, 0, 0, 0.14),
+            0 1px 3px rgba(0, 0, 0, 0.08);
+
+    color: #263b43;
+}
+
+
+/* Separador entre fórmula principal y k */
+
+.impedancia-text p {
+    font-size: 0.55em !important;
+    margin: -10px 0 10px 0 !important;
+    text-align: left;
+}
+
+
+/* Fórmula principal */
+
+.impedancia-formula-principal {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 0 7px 0;
+
+    color: #263b43;
+
+    font-size: 0.5em;
+    line-height: 1;
+
+    text-align: center;
+
+    border-bottom: 2px solid rgba(120, 152, 189, 0.25);
+}
+
+
+/* Constante k */
+
+.impedancia-formula-k {
+    width: 100%;
+
+    box-sizing: border-box;
+
+    margin: 5px 0 0 0;
+    padding: 0;
+
+    color: #263b43;
+
+    font-size: 0.5em;
+    line-height: 1;
+
+    text-align: center;
+}
+
+
+/* Eliminar márgenes que agrega Quarto/MathJax */
+
+.impedancia-formula-principal p,
+.impedancia-formula-k p {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.impedancia-formula-principal .MathJax,
+.impedancia-formula-k .MathJax {
+    margin: 0 !important;
+}
+
+
+/* Evitar espacio vertical excesivo del display math */
+
+.impedancia-formula-principal mjx-container[display="true"],
+.impedancia-formula-k mjx-container[display="true"] {
+    margin: 0 !important;
+}
+
+
+/* =====================================================
+   REFERENCIA
+===================================================== */
+
+.impedancia-referencia {
+    width: 90%;
+    box-sizing: border-box;
+
+    margin: auto auto 18px auto;
+    padding: 8px 10px;
+
+    background: rgba(255, 255, 255, 0.88);
+    
+    border: 1px solid rgba(120, 152, 189, 0.30);
+    border-left: 5px solid #7898bd;
+    border-radius: 5px;
+
+    box-shadow:
+            0 5px 14px rgba(0, 0, 0, 0.14),
+            0 1px 3px rgba(0, 0, 0, 0.08);
+
+    color: #40545e;
+
+    font-size: 0.6em;
+    line-height: 1.1;
+
+    text-align: left;
+}
+
+.impedancia-referencia p {
+    margin: 0 !important;
+}
+
+
+/* Énfasis del concepto principal */
+
+.impedancia-referencia strong {
+    color: #263b43;
+    font-weight: 700;
+}

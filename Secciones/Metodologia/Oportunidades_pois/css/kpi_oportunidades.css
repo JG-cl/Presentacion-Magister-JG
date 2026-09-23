@@ -1,0 +1,363 @@
+/* ==========================================
+   INTRO
+   ========================================== */
+
+.oportunidades-intro {
+    width: 88%;
+    margin: 8px auto 10px auto;
+    padding: 4px 0 4px 18px;
+
+    border-left: 5px solid #7898bd;
+
+    color: #263b43;
+    font-size: 0.82em;
+    line-height: 1.25;
+
+    text-align: left;
+    }
+.oportunidades-intro p {
+    margin: 0 !important;
+}
+
+/* ==========================================
+   CONTENEDOR PRINCIPAL
+   ========================================== */
+
+.column-kpi-opor-main {
+    display: grid !important;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 28px;
+
+    width: 90% !important;
+    margin: 0 auto;
+
+    font-size: 0.70em;
+    line-height: 1.25;
+
+    align-items: stretch;
+}
+
+
+/* ==========================================
+   TARJETAS
+   ========================================== */
+
+.column-kpi-opor-sub {
+    min-width: 0;
+    box-sizing: border-box;
+
+    padding: 12px 16px 14px 16px;
+
+    background: linear-gradient(180deg,
+            #fbfdff 0%,
+            #f2f7fa 100%);
+
+    border: 3px solid #285b7c;
+    border-radius: 9px;
+
+    box-shadow:
+        0 7px 16px rgba(0, 0, 0, 0.10);
+
+    overflow: hidden;
+}
+
+
+/* Columna derecha */
+
+.column-kpi-opor-sub:last-child {
+    background: linear-gradient(180deg,
+            #dcece3 0%,
+            #b4d2c0 100%);
+}
+
+/* ==========================================
+   AJUSTE VERTICAL GENERAL
+   ========================================== */
+
+.column-kpi-opor-main {
+    gap: 26px;
+    width: 90% !important;
+    margin: 0 auto;
+
+    font-size: 0.66em;
+    /* antes 0.70 */
+    line-height: 1.20;
+    align-items: stretch;
+}
+
+.column-kpi-opor-sub {
+    padding: 8px 14px 10px 14px;
+    /* menos altura interna */
+}
+
+
+/* ==========================================
+   TITULOS
+   ========================================== */
+
+.kpi-title,
+.opor-title {
+    position: relative;
+
+    width: 100%;
+    box-sizing: border-box;
+
+    margin: 0 0 10px 0;
+    padding: 8px 12px 8px 12px;
+
+    background: transparent;
+
+    color: #263b43;
+
+    font-size: 1.2em;
+    font-weight: 700;
+    text-align: center;
+}
+
+.kpi-title p,
+.opor-title p {
+    margin: 0 !important;
+}
+
+.kpi-title::after,
+.opor-title::after {
+    content: "";
+
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+
+    width: 60%;
+    height: 4px;
+
+    transform: translateX(-50%);
+
+    background: #7898bd;
+    border-radius: 2px;
+}
+
+
+
+/* ==========================================
+   MAPA — PRINCIPAL AJUSTE IZQUIERDA
+   ========================================== */
+
+.oportunidades-svg {
+    width: 100%;
+    margin: 0px auto 0px auto;
+}
+
+.oportunidades-svg img {
+    display: block;
+    width: 70% !important;
+    max-width: none !important;
+    height: auto !important;
+
+    margin: 0 auto !important;
+}
+
+
+/* ==========================================
+   A EFECTIVA Y A POTENCIAL
+   ========================================== */
+
+.kpi-opor-contrib {
+    width: 92%;
+
+    margin: 2px auto 4px auto;
+    padding: 2px 8px;
+
+    text-align: center;
+}
+
+.kpi-opor-contrib p {
+    margin: 0 !important;
+}
+
+.kpi-opor-contrib .MathJax {
+    font-size: 0.84em !important;
+}
+
+.kpi-opor-contrib mjx-container[display="true"] {
+    margin: 0.25em 0 !important;
+}
+
+
+/* ==========================================
+   KPI PRINCIPAL
+   ========================================== */
+
+.kpi-opor-box {
+    width: 70%;
+
+    margin: 5px auto 7px auto;
+    padding: 7px 12px;
+
+    background: rgba(255, 255, 255, 0.88);
+
+    border-left: 5px solid #5e8c75;
+    border-radius: 5px;
+
+    box-shadow:
+        0 4px 10px rgba(0, 0, 0, 0.09);
+
+    text-align: center;
+}
+
+.kpi-opor-box p {
+    margin: 0 !important;
+}
+
+.kpi-opor-box .MathJax {
+    font-size: 0.94em !important;
+}
+
+.kpi-opor-box mjx-container[display="true"] {
+    margin: 0.2em 0 !important;
+}
+
+
+/* ==========================================
+   INTERPRETACIÓN
+   ========================================== */
+
+.kpi-desc-opor-box {
+    width: 88%;
+
+    margin: 26px auto 0 auto;
+    padding: 5px 11px;
+
+    background: rgba(255, 255, 255, 0.52);
+
+    border-left: 4px solid #5e8c75;
+    border-right: 4px solid #5e8c75;
+    border-radius: 3px;
+
+    line-height: 1.20;
+}
+
+.kpi-desc-opor-box p {
+    margin: 2px 0 !important;
+}
+
+.kpi-desc-opor-box .MathJax {
+    font-size: 0.92em !important;
+}
+
+
+/* ==========================================
+   TAMAÑO MATHJAX
+   ========================================== */
+
+/* Fórmula de componentes de cada POI */
+.MathJax_Display {
+    margin: 4px 0 4px 0 !important;
+}
+
+
+
+
+/* ==========================================
+   TABLA COMPOSICIÓN POI
+   ========================================== */
+
+.tabla-kpi {
+    width: 90%;
+    margin: 0px auto;
+
+    border: 3px solid #7898bd;
+    border-radius: 7px;
+
+    overflow: hidden;
+    background: rgba(255, 255, 255, 0.55);
+}
+
+
+/* TÍTULO */
+
+.tabla-kpi-header {
+    padding: 6px 10px;
+
+    background: rgba(255, 255, 255, 0.45);
+    border-bottom: 2px solid #7898bd;
+
+    text-align: center;
+    font-weight: 700;
+    font-size: 0.9em;
+}
+
+.tabla-kpi-header p {
+    margin: 0 !important;
+}
+
+
+/* 4 COLUMNAS */
+
+.tabla-kpi-body {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+
+/* CADA COMPONENTE */
+
+.tabla-kpi-sub {
+    min-width: 0;
+
+    padding: 20px 4px 8px 4px;
+
+    text-align: center;
+
+    border-right: 2px solid #b8cad8;
+}
+
+.tabla-kpi-sub:last-child {
+    border-right: none;
+}
+
+
+/* FÓRMULAS */
+
+.reveal .tabla-kpi-sub  .MathJax {
+    font-size: 0.9em !important;
+}
+
+
+/* TEXTO INFERIOR */
+
+.tabla-kpi-sub p {
+    margin: 2px 0 !important;
+    line-height: 1.0 !important;
+}
+
+.tabla-kpi-sub strong {
+    font-size: 0.78em;
+}
+
+.tabla-kpi-sub {
+    position: relative;
+}
+
+/* · entre los cuatro componentes */
+.tabla-kpi-body .tabla-kpi-sub:not(:last-child)::after {
+    content: "·";
+
+    position: absolute;
+
+    right: -0.01em;
+    top: 25%;
+
+    transform: translate(50%, -50%);
+
+    font-size: 2em;
+    font-weight: 700;
+    line-height: 1;
+
+    color: #263b43;
+
+    z-index: 10;
+}
+
+.tabla-kpi-sub:nth-child(2) strong {
+    font-size: 0.62em;
+}

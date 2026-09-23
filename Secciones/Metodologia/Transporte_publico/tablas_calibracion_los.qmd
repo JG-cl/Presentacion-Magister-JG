@@ -1,0 +1,66 @@
+# Metodología {menu-title="Calibración local mediante Jenks"}
+
+::: {.subtitle}
+
+Calibración de los niveles de servicio
+
+:::
+
+:::: {.columns-calibracion}
+
+
+::: {.column-texto-jenk}
+
+::: {.title-texto-jenk}
+
+Calibración local mediante Jenks
+
+:::
+
+Los umbrales de los niveles de servicio se obtienen mediante el método de **cortes naturales de Jenks** [@JenksCaspall1971], aplicado por separado a las variables de frecuencia (veh/h) y de regularidad del servicio (gap máximo).
+
+
+::: {.title-texto-jenk}
+
+Objetivo
+
+:::
+
+
+Minimizar la variabilidad dentro de cada clase y maximizar la variabilidad entre clases, identificando agrupaciones naturales en la distribución de los datos.
+
+:::: {.formula-jenk-main}
+
+::: {.formula-jenk}
+
+$$
+J =
+\sum_{k=1}^{K}
+\sum_{i \in C_k}
+\left(x_i-\overline{x}_k\right)^2
+$$
+
+:::
+
+::: {.formula-jenk-texto}
+
+$$
+\begin{aligned}
+K &: \text{Número de clases} \\
+C_k &: \text{Clase } k \\
+x_i &: \text{Observación } i \\
+\overline{x}_k &: \text{Media de la clase } k
+\end{aligned}
+$$
+
+:::
+
+::::
+
+:::
+
+{{< include Secciones/Metodologia/Transporte_publico/bloque_derecha_los.qmd >}}
+
+
+::::
+

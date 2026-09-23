@@ -1,0 +1,62 @@
+
+```{=html}
+<div class="tabla-resumen-poi">
+
+   <div class="titulo-resumen-poi">
+    Resumen descriptivo
+  </div>
+
+  <table class="poi-summary-table">
+
+    <thead>
+      <tr>
+        <th>Indicador</th>
+        <th>Área baja</th>
+        <th>Área intermedia</th>
+        <th>Área alta</th>
+      </tr>
+    </thead>
+
+    <tbody>
+
+      <tr>
+        <td>POI identificados</td>
+        <td>98</td>
+        <td>125</td>
+        <td>1.082</td>
+      </tr>
+
+      <tr>
+        <td>Categoría predominante</td>
+        <td>University (21)</td>
+        <td>Restaurant (18)</td>
+        <td>Restaurant (213)</td>
+      </tr>
+
+      <tr>
+        <td>Segunda categoría</td>
+        <td>Doctor (16)</td>
+        <td>Grocery Store (11)</td>
+        <td>Doctor (135)</td>
+      </tr>
+
+      <tr>
+        <td>Tercera categoría</td>
+        <td>School (8)</td>
+        <td>School (10)</td>
+        <td>Pharmacy (60)</td>
+      </tr>
+
+      <tr>
+        <td>Número de categorías distintas</td>
+        <td>24</td>
+        <td>25</td>
+        <td>36</td>
+      </tr>
+
+    </tbody>
+
+  </table>
+
+</div>
+```
