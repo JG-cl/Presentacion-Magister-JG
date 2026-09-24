@@ -31,7 +31,7 @@ Evalúa las **condiciones del servicio de buses en cada bloque horario**.
 :::
 
 
-::: {.quote-box style="margin-top: 18px; text-align: center; width: 90%; margin-left: auto; margin-right: auto;"}
+::: {.score-quote-box}
 $N_h$ y $G_h^{\max}$ → **clasificación según LOS calibrados**
 :::
 

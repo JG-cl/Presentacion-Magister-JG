@@ -1,6 +1,6 @@
 .metodo-intro-score-frec {
     width: 88%;
-    margin: -10px auto 0px  auto;
+    margin: -6px auto 0px  auto;
     padding: 4px 0 4px 18px;
 
     border-left: 5px solid #7898bd;
@@ -25,10 +25,8 @@
 .score-box {
     position: relative;
 
-    /* font-size: 0.65em; */
-
     width: 90%;
-    margin: 0 auto 10px auto;
+    margin: 0 auto 18px auto;
 
     padding: 10px 40px 10px 40px;
 
@@ -36,7 +34,7 @@
             #edf4fa 0%,
             #f8fbfd 35%,
             #ffffff 100%);
-    border: 4px solid #3d4269;
+    border: 4px solid #285b7c;
 }
 
 .score-box .MathJax_Display {
@@ -50,11 +48,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 75% !important;
+    width: 76% !important;
     max-width: none !important;
     height: auto !important;
 
-    margin: -10px auto 0 auto !important
+    margin: 0px auto 0 auto !important
 }
 
 .reveal .slides section:not(.title-slide-custom) .score-box p {
@@ -67,10 +65,8 @@
     grid-template-columns: 1fr 1fr;
     gap: 30px;
     width: 90%;
-    margin: 8px auto 0 auto;
-    align-items: stretch;
-
-    
+    margin: 10px auto 0 auto;
+    align-items: stretch;    
 }
 
 .columns-sfrec-sub {
@@ -101,13 +97,13 @@
 /* ==========================================
    CONTENEDOR TABLA
    ========================================== */
-
 .tabla-los-2 {
     width: 100%;
     box-sizing: border-box;
     margin: 0 auto;
     overflow: hidden;
     font-size: 0.6em;
+    border: 4px solid #285b7c;
 }
 
 
@@ -278,11 +274,6 @@
     padding-left: 14px !important;
 }
 
-/* .caption-jenk {
-    font-size: 0.55em;
-    font-weight: 600;
-    margin: 0 0 4px 4px;
-} */
 .caption-jenk{
     width: fit-content;
     max-width: 100%;
@@ -298,4 +289,25 @@
 
 .caption-jenk p {
     margin: 0 !important;
+}
+
+/* =====================================================
+   Pesos temporales
+===================================================== */
+.score-quote-box p {
+    margin: 0 !important;
+    line-height: 1.1 !important;
+}
+
+.score-quote-box{
+    width: 90%;
+    display: inline-block;
+    background: linear-gradient(to right, #e1e1e1 0%, #e1e1e1 70%, transparent 100%);
+
+    font-style: italic;
+    font-size: 0.82em;
+    margin-top: 20px;
+    padding: 10px 18px;
+
+    border-left: 6px solid #6b88ad;
 }
