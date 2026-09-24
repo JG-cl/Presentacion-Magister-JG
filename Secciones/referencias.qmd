@@ -1,6 +1,0 @@
-# Referencias
-
-::: {.refs-scroll}
-::: {#refs}
-:::
-:::
