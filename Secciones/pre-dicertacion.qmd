@@ -1,0 +1,138 @@
+```{=html}
+<section class="pre-dicertacion">
+
+  <!-- =====================================================
+       HEADER INSTITUCIONAL
+       ===================================================== -->
+  <div class="header">
+
+    <div class="header-logo">
+      <img
+        src="imagenes/escudo.png"
+        alt="Logo Universidad de Concepción">
+    </div>
+
+    <div class="header-texto">
+      <p>Universidad de Concepción</p>
+      <p>Dirección de Postgrado</p>
+      <p>Facultad de Ingeniería</p>
+    </div>
+
+  </div>
+
+
+  <!-- =====================================================
+       INTRODUCCIÓN
+       ===================================================== -->
+  <div class="pre-intro">
+
+    <div class="pre-intro-titulo">
+      Sigue la presentación en tu dispositivo
+    </div>
+
+    <div class="pre-intro-subtitulo">
+      Escanea el código QR para acceder a la presentación sincronizada
+    </div>
+
+  </div>
+
+
+  <!-- =====================================================
+       PASOS
+       ===================================================== -->
+  <div class="pre-acceso">
+
+
+    <!-- =========================
+         PASO 1 — QR
+         ========================= -->
+    <div class="pre-acceso-item">
+
+      <div class="paso-label">
+        <span class="paso-numero">1</span>
+        <span>Escanea</span>
+      </div>
+
+      <div class="QR">
+
+        <!-- Reemplaza por tu QR actual -->
+        <img
+          src="imagenes/qrcode.svg"
+          alt="Código QR de la presentación">
+
+      </div>
+
+      <div class="paso-descripcion">
+        Accede desde tu teléfono, tablet o computador
+      </div>
+
+    </div>
+
+
+    <!-- =========================
+         CONECTOR
+         ========================= -->
+    <div class="pre-conector">
+      <img src="imagenes/right_arrows.svg">
+    </div>
+
+
+    <!-- =========================
+         PASO 2 — TELÉFONO
+         ========================= -->
+    <div class="pre-acceso-item">
+
+      <div class="paso-label">
+        <span class="paso-numero">2</span>
+        <span>Visualiza</span>
+      </div>
+
+      <div class="cellphone">
+
+        <div class="smartphone">
+
+          <div class="content">
+
+            <ul>
+              <li></li>
+              <li></li>
+              <li style="width: 90%"></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li style="width: 60%"></li>
+              <li></li>
+              <li></li>
+              <li style="width: 70%"></li>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <div class="landscape-text">
+        <strong>Modo horizontal recomendado</strong>
+        <span>Mejor visualización de mapas y gráficos</span>
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <!-- =====================================================
+       PIE
+       ===================================================== -->
+  <div class="pre-footer">
+    La presentación avanzará automáticamente junto con la exposición
+  </div>
+
+</section>
+```

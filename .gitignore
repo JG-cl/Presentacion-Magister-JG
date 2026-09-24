@@ -2,6 +2,9 @@
 .venv/
 venv/
 
+#Importante no subir
+index-speaker.html
+
 #GTFS Full
 Full
 

@@ -1,0 +1,614 @@
+/* =========================================================
+   SLIDE — PRESENTACIÓN EN DISPOSITIVO
+   ========================================================= */
+
+.reveal .slides section .pre-dicertacion {
+    width: 100%;
+    height: 100%;
+    min-height: 100%;
+
+    margin: 0 !important;
+    padding: 4% 7% 3.5% 7%;
+
+    box-sizing: border-box;
+    background: #f4f4f4;
+
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* =========================================================
+   INTRO
+   ========================================================= */
+
+.pre-intro {
+    width: min(1050px, 82%);
+
+    margin:
+        clamp(20px, 3vh, 42px) auto 0 auto;
+
+    flex: 0 0 auto;
+}
+
+
+.pre-intro-titulo {
+    font-size: 1.1em;
+    font-weight: 600;
+
+    line-height: 1.15;
+
+    color: #102f4f;
+}
+
+
+.pre-intro-subtitulo {
+    margin-top: 10px;
+
+    font-size: 0.8em;
+    font-weight: 400;
+
+    line-height: 1.35;
+
+    color: #626262;
+}
+
+
+/* =========================================================
+   CONTENIDO CENTRAL
+   ========================================================= */
+
+.pre-acceso {
+    width: 92%;
+
+    margin:
+        clamp(28px, 4vh, 50px) auto 0 auto;
+
+    display: grid;
+
+    grid-template-columns:
+        minmax(260px, 1fr) clamp(65px, 8vw, 110px) minmax(260px, 1fr);
+
+    align-items: center;
+
+    flex: 0 0 auto;
+}
+
+
+/* =========================================================
+   CADA PASO
+   ========================================================= */
+
+.pre-acceso-item {
+    min-width: 0;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: flex-start;
+}
+
+
+/* =========================================================
+   ETIQUETA 1 / 2
+   ========================================================= */
+
+.paso-label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 12px;
+
+    margin-bottom: 22px;
+
+    color: #102f4f;
+
+    font-size: 0.6em;
+    font-weight: 600;
+}
+
+
+.paso-numero {
+    width: 34px;
+    height: 34px;
+
+    box-sizing: border-box;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 2px solid #102f4f;
+    border-radius: 50%;
+
+    font-size: 0.6em;
+    font-weight: 700;
+
+    line-height: 1;
+}
+
+
+/* =========================================================
+   QR
+   ========================================================= */
+
+.QR {
+    width: clamp(210px, 16vw, 270px);
+    aspect-ratio: 1 / 1;
+
+    box-sizing: border-box;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 15px;
+
+    background: #fff;
+
+    border-radius: 8px;
+}
+
+
+.reveal .QR img {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: contain;
+
+    margin: 0 !important;
+
+    max-width: none;
+    max-height: none;
+}
+
+
+/* =========================================================
+   DESCRIPCIÓN QR
+   ========================================================= */
+
+.paso-descripcion {
+    margin-top: 18px;
+
+    font-size: 0.7em;
+
+    line-height: 1.3;
+
+    text-align: center;
+
+    color: #666;
+}
+
+
+/* =========================================================
+   CONECTOR CENTRAL
+   ========================================================= */
+
+.pre-conector {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    opacity: 0.8;
+}
+
+
+.reveal .pre-conector img {
+    display: block;
+
+    width: 180px;
+    height: auto;
+
+    margin: 0 !important;
+
+    max-width: none;
+    max-height: none;
+}
+
+
+/* =========================================================
+   CONTENEDOR DEL CELULAR
+   ========================================================= */
+
+.cellphone {
+    position: relative;
+
+    width: 270px;
+    height: 270px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin: 0;
+}
+
+
+/* =========================================================
+   SMARTPHONE
+   ========================================================= */
+
+.smartphone {
+    width: 140px;
+    height: 200px;
+
+    scale: 1.15;
+
+    box-sizing: border-box;
+    margin: 0;
+
+    border: 6px solid #000;
+    border-top-width: 15px;
+    border-bottom-width: 20px;
+    border-radius: 4px;
+
+    transform-origin: center center;
+    z-index: 1;
+
+    animation: smartphone 12s ease-in-out infinite;
+
+}
+
+
+@keyframes smartphone {
+
+    /* 0 s */
+    0% {
+        transform: rotate(0deg);
+        opacity: 0;
+    }
+
+    /* 1 s */
+    8.33% {
+        transform: rotate(0deg);
+        opacity: 1;
+    }
+
+    /* 4 s */
+    33.33% {
+        transform: rotate(-90deg);
+        opacity: 1;
+    }
+
+    /* 4–12 s */
+    100% {
+        transform: rotate(-90deg);
+        opacity: 1;
+    }
+}
+
+
+/* =========================================================
+   ALTAVOZ
+   ========================================================= */
+
+.smartphone::before {
+    content: "";
+
+    display: block;
+
+    width: 18px;
+    height: 4px;
+
+    margin: -10px auto;
+
+    box-sizing: border-box;
+
+    background: #000;
+
+    border: 2px solid #d3d3d3;
+    border-radius: 4px;
+}
+
+
+/* =========================================================
+   BOTÓN
+   ========================================================= */
+
+.smartphone::after {
+    content: "";
+
+    display: block;
+
+    width: 12px;
+    height: 12px;
+
+    margin: 4px auto;
+
+    box-sizing: border-box;
+
+    background: #000;
+
+    border: 3px solid #d3d3d3;
+    border-radius: 50%;
+}
+
+
+/* =========================================================
+   PANTALLA
+   ========================================================= */
+
+.smartphone .content {
+    /*
+       IMPORTANTE:
+       este relative hace que el UL absoluto se posicione
+       respecto de la pantalla y NO respecto de la slide.
+    */
+    position: relative;
+
+    width: 120px;
+    height: 170px;
+
+    box-sizing: border-box;
+
+    margin: 12px 0 0 3px;
+    padding: 10px;
+
+    overflow: hidden;
+
+    background: #eee;
+    color: #d4d4d4;
+
+    z-index: 1;
+
+}
+
+.smartphone::before,
+.smartphone::after {
+    position: relative;
+    z-index: 3;
+}
+
+/* =========================================================
+   CONTENIDO DE LA PANTALLA
+   ========================================================= */
+
+.reveal .smartphone ul {
+    position: absolute;
+
+    /*
+       En vertical ocupa prácticamente toda la pantalla.
+       Lo centramos para poder rotarlo alrededor del centro.
+    */
+    top: 50%;
+    left: 50%;
+
+    width: 100px;
+
+    margin: 0 !important;
+    padding: 0 !important;
+
+    list-style: none !important;
+
+    transform-origin: center center;
+
+    animation: screen 12s ease-in-out infinite;
+}
+
+
+.reveal .smartphone ul li {
+    display: block !important;
+
+    width: 100%;
+    height: 6px !important;
+
+    margin: 5px 0 0 0 !important;
+    padding: 0 !important;
+
+    list-style: none !important;
+
+    background: #d4d4d4 !important;
+}
+
+
+/*
+   Conserva los anchos personalizados:
+   style="width: 90%", etc.
+*/
+.reveal .smartphone ul li[style] {
+    max-width: 100%;
+}
+
+
+/* Evita estilos de Reveal sobre los LI */
+.reveal .smartphone ul li::before,
+.reveal .smartphone ul li::after {
+    content: none !important;
+}
+
+
+/* =========================================================
+   ROTACIÓN DEL CONTENIDO
+
+   Teléfono:  0°  -> -90°
+   Pantalla:  0°  -> +90°
+
+   Resultado:
+   las líneas terminan horizontales respecto al espectador.
+   ========================================================= */
+
+@keyframes screen {
+
+    /* 0 s — invisible */
+    0% {
+        width: 100px;
+
+        transform:
+            translate(-50%, -50%) rotate(0deg);
+
+        opacity: 0;
+    }
+
+    /* 1 s — aparece vertical */
+    8.33% {
+        width: 100px;
+
+        transform:
+            translate(-50%, -50%) rotate(0deg);
+
+        opacity: 1;
+    }
+
+    /*
+       4 s — el teléfono ya está horizontal.
+
+       Como el UL gira +90°, su ancho pasa a utilizar
+       la dimensión larga de la pantalla.
+    */
+    33.33% {
+        width: 155px;
+
+        transform:
+            translate(-50%, -50%) rotate(90deg);
+
+        opacity: 1;
+    }
+
+    /* 4–12 s — pausa horizontal */
+    100% {
+        width: 155px;
+
+        transform:
+            translate(-50%, -50%) rotate(90deg);
+
+        opacity: 1;
+    }
+}
+
+
+/* =========================================================
+   TEXTO MODO HORIZONTAL
+   ========================================================= */
+
+.landscape-text {
+    margin-top: 14px;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+
+    text-align: center;
+
+    line-height: 1.3;
+}
+
+
+.landscape-text strong {
+    color: #102f4f;
+
+    font-size: 0.7em;
+    font-weight: 600;
+}
+
+
+.landscape-text span {
+    margin-top: 5px;
+
+    color: #666;
+
+    font-size: 0.6em;
+    font-weight: 400;
+}
+
+
+/* =========================================================
+   FOOTER
+   ========================================================= */
+
+.pre-footer {
+    margin-top: auto;
+
+    padding-top: 18px;
+    padding-bottom: 5px;
+
+    text-align: center;
+
+    color: #777;
+
+    font-size: 0.85em;
+    font-weight: 400;
+}
+
+
+.pre-footer::after {
+    content: "";
+
+    display: block;
+
+    width: 64%;
+    height: 4px;
+
+    margin: 12px auto 0 auto;
+
+    background: linear-gradient(to right,
+            transparent 0%,
+            rgba(24, 62, 80, 0.35) 18%,
+            #183e50 50%,
+            rgba(24, 62, 80, 0.35) 82%,
+            transparent 100%);
+}
+
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 900px) {
+
+    .pre-intro {
+        width: 90%;
+    }
+
+    .pre-acceso {
+        width: 92%;
+
+        grid-template-columns:
+            minmax(190px, 1fr) 50px minmax(190px, 1fr);
+    }
+
+    .QR {
+        width: clamp(165px, 19vw, 210px);
+    }
+
+    .cellphone {
+        width: 230px;
+        height: 230px;
+    }
+
+    .reveal .pre-conector img {
+        width: 48px;
+    }
+}
+
+
+/* =========================================================
+   ACCESIBILIDAD
+   ========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .smartphone {
+        animation: none;
+
+        transform: rotate(-90deg);
+        opacity: 1;
+    }
+
+    .reveal .smartphone ul {
+        animation: none;
+
+        width: 155px;
+
+        transform:
+            translate(-50%, -50%) rotate(90deg);
+
+        opacity: 1;
+    }
+}
