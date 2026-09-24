@@ -1,0 +1,45 @@
+
+:::: {.columns-calibracion-derecha}
+
+::: {.column-texto-jenk-2}
+
+::: {.procedimiento-jenk}
+
+::: {.title-texto-jenk}
+
+Procedimiento
+
+:::
+
+- Selección de variable (veh/h o gap máximo)
+- Aplicación de Jenks ($K=5$ clases: A–E)
+- Asignación de umbrales
+- Definición del nivel F (sin buses)
+
+:::
+
+
+::: {.resultado-jenk}
+
+::: {.title-texto-jenk}
+
+Resultado
+
+:::
+
+::: {.grafico-jenk}
+
+![](imagenes/cortes_jenks.svg)
+
+:::
+
+:::
+
+
+:::
+
+<!-- Tabla los -->
+
+{{< include Secciones/Metodologia/Transporte_publico/bloque_tablas_los.qmd >}}
+
+::::

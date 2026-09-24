@@ -1,0 +1,202 @@
+# Datos {menu-title="Clasificación POI"}
+
+::: {.subtitle}
+
+Clasificación de Point of Interest
+
+:::
+
+:::: {.clasificacion-main}
+
+::: {.clasificacion-sub width="50%"}
+
+::: {.dato-tipo}
+
+Área de baja accesibilidad
+
+:::
+
+```{python}
+#| echo: false
+#| class: fig-class
+
+from pathlib import Path
+from scrips import clasificador_poi, grafico_categorias, poi_total_area
+import json
+
+main_path = Path.cwd().resolve()
+
+data_place_file = (
+    main_path
+    / "Data"
+    / "Area Baja"
+    / "Data Places"
+    / "01M1A6FZMJSQ.json"
+)
+
+with open(data_place_file, "r", encoding="utf-8") as f:
+    data_places = json.load(f)
+
+poly_id = list(data_places.keys())[0]
+
+clasificador = clasificador_poi(
+    data_places=data_places[poly_id]
+)
+
+fig = grafico_categorias(clasificador["cat_count"])
+fig
+```
+
+::: {.area-poi-desc}
+
+```{python}
+#| echo: false
+#| output: asis
+
+n_pois = poi_total_area(
+    data_places=data_places,
+    poly_id=poly_id
+)
+
+texto_area = f"""
+<div class="area-poi-desc-box">
+🏢 <b>POI identificados:</b> {n_pois}<br>
+</div>
+"""
+
+print(texto_area)
+```
+
+:::
+
+:::
+
+::: {.clasificacion-sub width="50%"}
+
+::: {.dato-tipo}
+
+Área de accesibilidad intermedia
+
+:::
+
+```{python}
+#| echo: false
+#| class: fig-class-alta
+
+data_place_file = (
+    main_path
+    / "Data"
+    / "Area Intermedia"
+    / "Data Places"
+    / "01KVKQ099Z48.json"
+)
+
+with open(data_place_file, "r", encoding="utf-8") as f:
+    data_places = json.load(f)
+
+poly_id = list(data_places.keys())[0]
+
+clasificador = clasificador_poi(
+    data_places=data_places[poly_id]
+)
+
+fig = grafico_categorias(clasificador["cat_count"])
+fig
+```
+
+::: {.area-poi-desc}
+
+```{python}
+#| echo: false
+#| output: asis
+
+n_pois = poi_total_area(
+    data_places=data_places,
+    poly_id=poly_id
+)
+
+texto_area = f"""
+<div class="area-poi-desc-box">
+🏢 <b>POI identificados:</b> {n_pois}<br>
+</div>
+"""
+
+print(texto_area)
+```
+
+:::
+
+:::
+
+::::
+
+
+# Exploración Datos {menu-title="Exploración Datos - Clasificación POI 2"}
+
+::: {.subtitle}
+
+Clasificación de Point of Interest
+
+:::
+
+:::: {.clasificacion-main}
+
+::: {.clasificacion-sub width="60%"}
+
+::: {.dato-tipo}
+
+Área de alta accesibilidad
+
+:::
+
+```{python}
+#| echo: false
+#| class: fig-class-alta
+
+data_place_file = (
+    main_path
+    / "Data"
+    / "Area Alta"
+    / "Data Places"
+    / "01KTYZJYNBDM.json"
+)
+
+with open(data_place_file, "r", encoding="utf-8") as f:
+    data_places = json.load(f)
+
+poly_id = list(data_places.keys())[0]
+
+clasificador = clasificador_poi(
+    data_places=data_places[poly_id]
+)
+
+fig = grafico_categorias(clasificador["cat_count"])
+fig.set_size_inches(10, 8)
+fig
+```
+
+::: {.area-poi-desc}
+
+```{python}
+#| echo: false
+#| output: asis
+
+n_pois = poi_total_area(
+    data_places=data_places,
+    poly_id=poly_id
+)
+
+texto_area = f"""
+<div class="area-poi-desc-box">
+🏢 <b>POI identificados:</b> {n_pois}<br>
+</div>
+"""
+
+print(texto_area)
+```
+
+:::
+
+:::
+
+::::

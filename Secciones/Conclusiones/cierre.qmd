@@ -1,0 +1,25 @@
+# Conclusiones {menu-title="Cierre"}
+
+::: {.subtitle}
+
+Cierre
+
+:::
+
+:::: {.closing-cointeiner}
+
+::: {.closing-statement-1}
+
+<span class="closing-quote">“</span>
+
+No porque pueda enviar más buses significa que deba hacerlo.
+
+:::
+
+::: {.closing-statement-2}
+
+Lo relevante no es maximizar la frecuencia por sí sola, sino observar si la provisión está **temporalmente alineada** con la presencia de población y las oportunidades disponibles.
+
+:::
+
+::::

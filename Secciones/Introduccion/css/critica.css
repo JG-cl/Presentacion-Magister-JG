@@ -1,0 +1,106 @@
+/* =====================================================
+   Texto principal
+===================================================== */
+
+.critica-text {
+    width: 88%;
+    margin: 20px auto 0 auto !important;
+
+    line-height: 1.25;
+    color: #233238;
+    text-align: justify;
+}
+
+.critica-text p {
+    margin: 0 0 26px 0 !important;
+    font-size: 0.95em !important;
+}
+
+
+/* =====================================================
+   Pregunta central
+===================================================== */
+
+.critica-text blockquote {
+    position: relative;
+
+    width: 80% !important;
+    box-sizing: border-box;
+
+    margin: 18px auto 0 auto !important;
+    padding: 15px 35px !important;
+
+    background: rgba(255, 255, 255, 0.82);
+
+    border: none !important;
+    border-radius: 5px;
+
+    box-shadow: 8px 8px 0 rgba(0, 0, 0, 0.08);
+
+    text-align: center;
+    color: #233238;
+
+    font-size: 1.10em;
+    font-weight: 700;
+}
+
+.critica-text blockquote p {
+    margin: 0 !important;
+}
+
+
+/* Esquinas decorativas */
+.critica-text blockquote::before,
+.critica-text blockquote::after {
+    content: "";
+
+    position: absolute;
+
+    width: 38px;
+    height: 38px;
+}
+
+.critica-text blockquote::before {
+    top: 0;
+    left: 0;
+
+    border-top: 4px solid #6b88ad;
+    border-left: 4px solid #6b88ad;
+}
+
+.critica-text blockquote::after {
+    right: 0;
+    bottom: 0;
+
+    border-right: 4px solid #6b88ad;
+    border-bottom: 4px solid #6b88ad;
+}
+
+
+/* =====================================================
+   Imagen
+===================================================== */
+
+.people-img {
+    display: block !important;
+    /* border: 5px solid red; */
+
+    width: 88% !important;
+    height: auto !important;
+    margin: 0 auto 0 auto !important;
+
+   
+
+    box-shadow: none !important;
+    transform: translateY(-40px);
+
+    /* background: linear-gradient(180deg,
+            rgba(23, 63, 69, 0.03),
+            rgba(23, 63, 69, 0.08)); */
+}
+
+.people-img p {
+    margin-bottom: -40px !important;
+    padding: 0 !important;
+    line-height: 0 !important;
+}

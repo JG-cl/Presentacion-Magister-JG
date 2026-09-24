@@ -1,0 +1,155 @@
+```{=html}
+<iframe
+  id="areas-poi"
+  class="map-pois-bloque lazy-iframe"
+  data-src="Html/poi_viewer/map_poi.html"
+  style="border: none;">
+</iframe>
+
+<script>
+(() => {
+
+  // La base corresponde a la ubicación del index.html principal.
+  const baseURL = new URL(".", window.location.href);
+
+  // Convierte una ruta del proyecto en una URL completa.
+  const urlProyecto = (ruta) => {
+    return new URL(ruta, baseURL).href;
+  };
+
+  function enviarAreas() {
+
+    const iframeAreasPois = document.getElementById("areas-poi");
+
+    if (!iframeAreasPois || !iframeAreasPois.contentWindow) return;
+
+    const dataEnviar = {
+      area_1: {
+        area_name: "Área Baja",
+
+        area_seleccionada: urlProyecto(
+          "Data/Area Baja/area_seleccionada.json"
+        ),
+
+        accesos: {
+          "Acceso 1": [
+            urlProyecto(
+              "Data/Area Baja/Data Access/e5eabf16-47d9-4885-9998-43b372f4a949.json"
+            ),
+            urlProyecto(
+              "Data/Area Baja/Data Access Poi Distance/01M1A5F5VYVE.json"
+            )
+          ],
+
+          "Acceso 2": [
+            urlProyecto(
+              "Data/Area Baja/Data Access/acces-baja-2.json"
+            ),
+            urlProyecto(
+              "Data/Area Baja/Data Access Poi Distance/01M1A6FZMJSQ.json"
+            )
+          ]
+        },
+
+        data_places: urlProyecto(
+          "Data/Area Baja/Data Places/01M1A6FZMJSQ.json"
+        )
+      },
+
+      area_2: {
+        area_name: "Área Intermedia",
+
+        area_seleccionada: urlProyecto(
+          "Data/Area Intermedia/area_seleccionada.json"
+        ),
+
+        accesos: {
+          "Acceso 1": [
+            urlProyecto(
+              "Data/Area Intermedia/Data Access/83f9742c-bb41-48c4-9719-8f9f4524f8ea.json"
+            ),
+            urlProyecto(
+              "Data/Area Intermedia/Data Access Poi Distance/01KVKQ099Z48.json"
+            )
+          ],
+
+          "Acceso 2": [
+            urlProyecto(
+              "Data/Area Intermedia/Data Access/7052a9fc-afd2-4537-967a-d0ce42f8801e.json"
+            ),
+            urlProyecto(
+              "Data/Area Intermedia/Data Access Poi Distance/01M0ZVTH74AW.json"
+            )
+          ]
+        },
+
+        data_places: urlProyecto(
+          "Data/Area Intermedia/Data Places/01KVKQ099Z48.json"
+        )
+      },
+
+      area_3: {
+        area_name: "Área Alta",
+
+        area_seleccionada: urlProyecto(
+          "Data/Area Alta/area_seleccionada.json"
+        ),
+
+        accesos: {
+          "Acceso 1": [
+            urlProyecto(
+              "Data/Area Alta/Data Access/056fd607-aa8d-497d-96b1-1fe8fc61880f.json"
+            ),
+            urlProyecto(
+              "Data/Area Alta/Data Access Poi Distance/01KTYZJYNBDM.json"
+            )
+          ],
+
+          "Acceso 2": [
+            urlProyecto(
+              "Data/Area Alta/Data Access/09418028-7292-44cb-9a1a-cc80d3b66ff1.json"
+            ),
+            urlProyecto(
+              "Data/Area Alta/Data Access Poi Distance/01KV7NVA96FY.json"
+            )
+          ]
+        },
+
+        data_places: urlProyecto(
+          "Data/Area Alta/Data Places/01KTYZJYNBDM.json"
+        )
+      }
+    };
+
+    iframeAreasPois.contentWindow.postMessage(
+      {
+        type: "cargar_areas_poi",
+        data_enviar: dataEnviar
+      },
+      "*"
+    );
+  }
+
+
+  // =====================================================
+  // ENVIAR CONFIGURACIÓN CADA VEZ QUE CARGUE EL IFRAME
+  // =====================================================
+  const iframeAreasPois = document.getElementById("areas-poi");
+
+  if (iframeAreasPois) {
+
+    iframeAreasPois.addEventListener("load", () => {
+
+      // Pequeña espera para que el viewer y sus scripts
+      // internos terminen de inicializarse.
+      setTimeout(() => {
+        enviarAreas();
+      }, 150);
+
+    });
+
+  }
+
+})();
+</script>
+```

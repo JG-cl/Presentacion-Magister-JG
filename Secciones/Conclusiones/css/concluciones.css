@@ -1,0 +1,286 @@
+/* ==========================================
+   CONCLUSIONES
+   ========================================== */
+
+
+/* ==========================================
+   CONCLUSIÓN GENERAL
+   ========================================== */
+
+.conclusion-general {
+    width: 84%;
+    box-sizing: border-box;
+
+    margin: 20px auto 28px auto !important;
+    padding: 14px 24px;
+
+    border: 4px solid #173f45;
+    border-left: 8px solid #173f45;
+    border-radius: 12px;
+
+    background:
+        linear-gradient(90deg,
+            rgba(40, 91, 124, 0.10) 0%,
+            rgba(40, 91, 124, 0.04) 65%,
+            rgba(255, 255, 255, 0.95) 100%);
+
+    box-shadow:
+        0 3px 8px rgba(0, 0, 0, 0.10);
+
+    color: #263746;
+
+    font-size: 0.8em;
+    line-height: 1.18;
+}
+
+
+/* Eliminar márgenes automáticos de Quarto */
+.conclusion-general p {
+    margin: 0 !important;
+}
+
+
+/* Destacados */
+.conclusion-general strong {
+    color: #173f45;
+    font-weight: 800;
+}
+
+/* Titulo */
+.conclusion-general-title {
+    display: inline-block;
+
+    margin-bottom: 8px;
+
+    color: #173f45;
+
+    font-size: 1em;
+    font-weight: 800;
+
+}
+
+
+/* Línea amarilla bajo el título */
+.conclusion-general-title::after {
+    content: "";
+
+    display: block;
+
+    width: 100%;
+    height: 4px;
+
+    margin-top: 4px;
+
+    background: #c6c312;
+    /* background: #7898bd; */
+    border-radius: 4px;
+}
+
+
+
+
+/* ==========================================
+   HALLAZGOS
+   ========================================== */
+
+.conclusiones-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    gap: 26px 28px;
+
+    width: 84%;
+    margin: 30px auto 0 auto !important;
+    padding: 0 !important;
+}
+
+
+.conclusion-item {
+    position: relative;
+    overflow: hidden;
+
+    box-sizing: border-box;
+    min-width: 0;
+
+    /* espacio superior para el número */
+    padding: 20px 22px 16px 26px;
+
+    border-left: 4px solid rgba(49, 87, 119, 0.48);
+    border-bottom: 2px solid rgba(40, 91, 124, 0.25);
+
+    background: linear-gradient(90deg,
+            rgba(232, 240, 246, 0.82) 0%,
+            rgba(248, 251, 253, 0.55) 68%,
+            rgba(255, 255, 255, 0.15) 100%);
+
+    color: #263746;
+
+    font-size: 0.61em;
+    line-height: 1.18;
+}
+
+
+.conclusion-item p {
+    margin: 0 !important;
+}
+
+
+.conclusion-item strong {
+    color: #285b7c;
+    font-weight: 800;
+}
+
+
+
+/* ==========================================
+   TÍTULO
+   ========================================== */
+
+.conclusion-item-title {
+    display: block;
+
+    margin: 0 0 9px 0 !important;
+    padding: 0 !important;
+
+    color: #173f45;
+
+    font-size: 1.16em;
+    font-weight: 750;
+    line-height: 1.05;
+}
+
+
+.conclusion-item-title p {
+    margin: 0 !important;
+}
+
+
+
+/* ==========================================
+   NÚMERO DECORATIVO
+   ========================================== */
+
+.conclusion-numero {
+    position: absolute;
+
+    right: -60px;
+    bottom: -110px;
+
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 120px;
+    height: 120px;
+
+    border-radius:50%;
+
+    background: #315777;
+    color: white;
+
+    font-size: 2.8em;
+    font-weight: 800;
+    line-height: 1;
+
+    opacity: 0.25;
+
+    z-index: 0;
+    pointer-events: none;
+}
+
+
+/* Contenido de la ficha sobre el número */
+.conclusion-item>*:not(.conclusion-numero) {
+    position: relative;
+    z-index: 1;
+}
+
+.conclusion-item:nth-child(3) .conclusion-numero,
+.conclusion-item:nth-child(4) .conclusion-numero {
+    bottom: -140px;
+}
+
+/* ==============================
+   SÍNTESIS FINAL
+   ============================== */
+
+.conclusion-sintesis {
+    position: relative;
+
+    width: 85%;
+    box-sizing: border-box;
+
+    margin: 20px auto 0 auto !important;
+    padding: 18px 45px;
+
+    text-align: center;
+
+    /* Fade verde hacia ambos costados */
+    background: linear-gradient(90deg,
+            rgba(180, 210, 192, 0.00) 0%,
+            rgba(180, 210, 192, 0.35) 12%,
+            rgba(180, 210, 192, 0.75) 35%,
+            rgba(180, 210, 192, 0.75) 65%,
+            rgba(180, 210, 192, 0.35) 88%,
+            rgba(180, 210, 192, 0.00) 100%);
+
+    color: #263746;
+
+    border: none;
+    border-radius: 0;
+
+    box-shadow: none;
+
+    font-size: 0.75em;
+    line-height: 1.18;
+}
+
+
+/* Línea superior con fade */
+.conclusion-sintesis::before {
+    content: "";
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 3px;
+
+    background: linear-gradient(90deg,
+            transparent 0%,
+            #69b36d 20%,
+            #69b36d 80%,
+            transparent 100%);
+}
+
+
+/* Línea inferior con fade */
+.conclusion-sintesis::after {
+    content: "";
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    width: 100%;
+    height: 3px;
+
+    background: linear-gradient(90deg,
+            transparent 0%,
+            #69b36d 20%,
+            #69b36d 80%,
+            transparent 100%);
+}
+
+
+.conclusion-sintesis p {
+    margin: 0 !important;
+}
+
+
+.conclusion-sintesis strong {
+    color: #3f8748;
+    font-weight: 800;
+}

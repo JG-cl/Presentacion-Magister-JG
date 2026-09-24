@@ -1,0 +1,93 @@
+```{python}
+#| echo: false
+
+import os
+import json
+
+from scrips.heatmap import gtfs_heatmap_grid_crs
+
+# =========================================================
+# Folders
+# =========================================================
+folder_gtfs = "Data/GTFS"
+folder_animation = "Data/GTFS_animation"
+
+os.makedirs(folder_animation, exist_ok=True)
+
+# =========================================================
+# Detectar archivos GTFS
+# =========================================================
+files = sorted([
+    f for f in os.listdir(folder_gtfs)
+    if f.endswith(".json")
+])
+
+# =========================================================
+# Crear index.json
+# =========================================================
+with open(
+    os.path.join(folder_animation, "index.json"),
+    "w",
+    encoding="utf-8"
+) as f:
+
+    json.dump(
+        files,
+        f,
+        ensure_ascii=False,
+        indent=2
+    )
+
+# =========================================================
+# Procesar cada GTFS
+# =========================================================
+for file_name in files:
+    gtfs_path = os.path.join(folder_gtfs, file_name)
+
+    # ---------------------------------------------
+    # Cargar JSON GTFS
+    # ---------------------------------------------
+    with open(gtfs_path, "r", encoding="utf-8") as f:
+        raw = json.load(f)
+
+    data_gtfs = raw["Data"]
+
+    # ---------------------------------------------
+    # Generar heatmap animable
+    # ---------------------------------------------
+    heat_dump = gtfs_heatmap_grid_crs(
+        data_gtfs,
+        interval=15,
+        grid_m=100,
+        first=True,
+    )
+
+    # ---------------------------------------------
+    # Nombre salida
+    # ---------------------------------------------
+    base_name = os.path.splitext(file_name)[0]
+
+    output_path = os.path.join(
+        folder_animation,
+        f"{base_name}_animation.json"
+    )
+
+    # ---------------------------------------------
+    # Guardar
+    # ---------------------------------------------
+    with open(output_path, "w", encoding="utf-8") as f:
+        json.dump(
+            heat_dump,
+            f,
+            ensure_ascii=False
+        )
+```
+
+```{=html}
+<iframe 
+  id="gtfs-viewer"
+  class="map-gtfs lazy-iframe"
+  data-src="Html/gtfs_viewer/map_gtfs.html?viewer=gtfs"
+  style="border: none;">
+</iframe>
+```

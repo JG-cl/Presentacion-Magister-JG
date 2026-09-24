@@ -1,0 +1,70 @@
+
+```{python}
+#| echo: false
+
+import json
+from pathlib import Path
+
+# =========================================================
+# Rutas
+# =========================================================
+main_path = Path.cwd().resolve()
+folder_ptal = main_path / "Data" / "Data Ptal"
+
+# =========================================================
+# Obtener archivos GeoJSON
+# =========================================================
+archivos = sorted(
+    [f.name for f in folder_ptal.glob("*.geojson")]
+)
+
+# =========================================================
+# Crear index.json
+# =========================================================
+with open(folder_ptal / "index.json", "w", encoding="utf-8") as f:
+    json.dump(
+        archivos,
+        f,
+        ensure_ascii=False,
+        indent=4
+    )
+
+```
+
+```{=html}
+<iframe 
+  id="ptal"
+  class="map-ptal-bloque lazy-iframe"
+  data-src="Html/ptal_viewer/map_ptal.html"
+  style="border: none;">
+</iframe>
+
+<script>
+const iframeptal = document.getElementById("ptal");
+
+iframeptal.addEventListener("load", () => {
+  const baseURL = new URL(".", window.location.href);
+
+  iframeptal.contentWindow.postMessage({
+    areas: {
+      "Baja conectividad": new URL(
+        "Data/Area Baja/area_seleccionada.json",
+        baseURL
+      ).href,
+
+      "Intermedia conectividad": new URL(
+        "Data/Area Intermedia/area_seleccionada.json",
+        baseURL
+      ).href,
+
+      "Alta conectividad": new URL(
+        "Data/Area Alta/area_seleccionada.json",
+        baseURL
+      ).href
+    }
+  }, "*");
+});
+</script>
+```
+
+

@@ -1,0 +1,75 @@
+# Metodología {menu-title="Formulación inspirada en PTAL"}
+
+::: {.subtitle}
+Formulación inspirada en PTAL: frecuencia observada e impedancia peatonal
+:::
+
+
+:::: {.columns-ptal-main}
+
+
+::: {.columns-ptal-sub width="47%"}
+
+Se adapta el enfoque PTAL incorporando la **frecuencia observada** y la
+**impedancia peatonal** para caracterizar espacialmente la oferta de
+transporte público y seleccionar **áreas contrastantes de análisis**.
+
+
+::: {.ptal-box}
+
+$$
+PTAL_c =
+\sum_{i \in S_c}
+P(t_i)\,
+\min\left(1,\frac{f_i}{F_{\max}}\right)
+$$
+
+:::
+
+
+::: {.ptal-param-box}
+
+<div class="ptal-param-box-title">**Parámetros principales**</div>
+
+
+:::: {.columns-param-ptal-main}
+
+::: {.columns-param-ptal-sub}
+
+- $c$: celda de análisis.
+- $S_c$: paraderos accesibles desde $c$.
+- $P(t_i)$: penalización por tiempo peatonal.
+
+:::
+
+::: {.columns-param-ptal-sub}
+
+- $f_i$: frecuencia observada en el paradero $i$.
+- $F_{\max}$: frecuencia de referencia.
+- $PTAL_c$: nivel resultante para la celda $c$.
+
+:::
+
+::::
+
+
+:::
+
+<div class="nota-ptal">
+  <strong>Selección de áreas:</strong>
+  baja, intermedia y alta conectividad corresponden a categorías derivadas
+  de la aproximación PTAL, <strong>no a la clasificación de resultados del framework</strong>.
+</div>
+
+
+:::
+
+
+::: {.columns-ptal-mapa width="53%"}
+
+{{< include Secciones/Metodologia/Ptal/bloque_mapa_ptal.qmd >}}
+
+:::
+
+
+::::

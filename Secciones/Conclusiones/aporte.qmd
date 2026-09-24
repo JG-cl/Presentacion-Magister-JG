@@ -1,0 +1,76 @@
+# Conclusiones {menu-title="Aportes de la metodología"}
+
+::: {.subtitle}
+Aportes de la metodología
+:::
+
+::: {.aporte-intro}
+La metodología integra transporte, población y oportunidades urbanas para identificar señales de alineación y desalineación temporal.
+:::
+
+
+:::: {.columns-aporte-main}
+
+<!-- Ficha 1 -->
+
+::: {.columns-aporte-sub}
+
+::: {.aporte-title}
+Integración multidimensional
+:::
+
+Integra provisión de transporte, presencia de población y oportunidades urbanas en un mismo marco.
+
+:::
+
+
+<!-- Ficha 2 -->
+
+::: {.columns-aporte-sub}
+
+::: {.aporte-title}
+Diagnóstico temporal
+:::
+
+Identifica señales de alineación y desalineación entre las tres dimensiones a lo largo del día.
+
+:::
+
+
+<!-- Ficha 3 -->
+
+::: {.columns-aporte-sub}
+
+::: {.aporte-title}
+Diagnóstico a escala local
+:::
+
+Evalúa cada acceso incorporando condiciones peatonales y oportunidades alcanzables en su entorno.
+
+:::
+
+
+<!-- Ficha 4 -->
+
+::: {.columns-aporte-sub}
+
+::: {.aporte-title}
+Adaptabilidad territorial
+:::
+
+Permite adaptar el framework a distintos territorios mediante parámetros definidos para el contexto de análisis.
+
+:::
+
+::::
+
+
+::: {.aporte-resultante}
+
+::: {.aporte-resultante-title}
+Síntesis metodológica
+:::
+
+Permite identificar **cuándo y dónde** emergen señales de alineación o desalineación entre la provisión de transporte, la presencia de población y las oportunidades disponibles.
+
+:::

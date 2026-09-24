@@ -1,0 +1,76 @@
+
+```{=html}
+<section class="title-slide-custom">
+
+<div class="header">
+  <div class="header-logo">
+    <img src="imagenes/escudo.png" alt="Logo Universidad de Concepción">
+  </div>
+
+  <div class="header-texto">
+    <p>Universidad de Concepción</p>
+    <p>Dirección de Postgrado </p>
+    <p>Facultad de Ingeniería</p>
+  </div>
+</div>
+
+  <div class="title-content">
+    <div class="title-line"></div>
+    <div class="title-main">
+      Indicadores de oferta de transporte público y actividad urbana
+    </div>
+
+    <div class="title-subtitle">
+      Memoria de titulo presentada para optar al grado de Magíster en Ciencias de la Ingeniería con mención en Ingeniería Civil
+    </div>
+    
+    <div class="title-line"></div>
+
+    <div class="title-footer">
+      <table class="tesis-table">
+        <tbody>
+          <tr>
+            <td class="tesis-label">Autor:</td>
+            <td>Jaime Andres González Rojas</td>
+          </tr>
+          <tr>
+            <td class="tesis-label">Profesor Guía:</td>
+            <td>Phd. Juan Antonio Carrasco Montagna</td>
+          </tr>
+          <tr>
+            <td class="tesis-label">Ev. Interno programa:</td>
+            <td>Phd. Sebastián Astroza Tagle</td>
+          </tr>
+          <tr>
+            <td class="tesis-label">Ev. Externo Programa UdeC:</td>
+            <td>Phd.Carlos Camilo Navarrete Lizama</td>
+          </tr>
+          <tr>
+            <td class="tesis-label">Ev. Externo Programa otra Universidad:</td>
+            <td>&nbsp;</td>
+          </tr>
+          <tr>
+            <td class="tesis-label">Lugar y fecha:</td>
+            <td> <span id="lugar-fecha"></span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+  </div>
+
+</section>
+
+
+
+<script>
+  const fecha = new Date().toLocaleDateString("es-CL", {
+    day: "numeric",
+    month: "long",
+    year: "numeric"
+  }).toLowerCase();
+
+  document.getElementById("lugar-fecha").textContent =
+    `Concepción, ${fecha}`;
+</script>
+```

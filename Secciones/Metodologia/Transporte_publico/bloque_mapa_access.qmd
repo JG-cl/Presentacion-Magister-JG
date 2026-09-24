@@ -1,0 +1,57 @@
+```{=html}
+<iframe 
+  id="accesos-jenk-calibration"
+  class="map-access lazy-iframe"
+  data-src="Html/access_viewer/map_access.html"
+  style="border: none;">
+</iframe>
+
+<script>
+(() => {
+
+  function enviarAccesos() {
+
+    const iframe = document.getElementById(
+      "accesos-jenk-calibration"
+    );
+
+    if (!iframe || !iframe.contentWindow) return;
+
+    const jsonUrl = new URL(
+      "Data/Jenk_calibration/2026-05-11.json",
+      document.baseURI
+    ).href;
+
+    iframe.contentWindow.postMessage(
+      {
+        access_exporter: jsonUrl
+      },
+      "*"
+    );
+  }
+
+
+  // =====================================================
+  // ENVIAR CONFIGURACIÓN CADA VEZ QUE CARGUE EL IFRAME
+  // =====================================================
+  const iframeAccesos = document.getElementById(
+    "accesos-jenk-calibration"
+  );
+
+  if (iframeAccesos) {
+
+    iframeAccesos.addEventListener("load", () => {
+
+      // Esperamos un poco para que map_access.html
+      // y sus scripts terminen de inicializarse.
+      setTimeout(() => {
+        enviarAccesos();
+      }, 150);
+
+    });
+
+  }
+
+})();
+</script>
+```

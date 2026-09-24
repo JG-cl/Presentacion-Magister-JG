@@ -1,0 +1,14 @@
+# Entorno virtual de Python
+.venv/
+venv/
+
+#GTFS Full
+Full
+
+# Cachés y temporales de Python/Jupyter
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# Archivos temporales de Quarto
+.quarto/

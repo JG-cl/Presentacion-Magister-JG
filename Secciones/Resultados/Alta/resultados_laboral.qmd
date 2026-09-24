@@ -1,0 +1,102 @@
+# Resultados {menu-title="Área de alta conectividad"}
+
+::: {.subtitle}
+Área de alta conectividad - Promedio Lunes a Viernes
+:::
+
+:::: {.columns-resultados-main}
+
+::: {.columns-resultados-text}
+
+```{=html}
+
+<div class="resumen-area">
+
+  <div class="resumen-item">
+    <span>Alta provisión de transporte</span>
+
+    <span class="accesos">
+      <span class="acceso-badge acceso-badge-1">A1</span>
+      <span class="acceso-badge acceso-badge-2">A2</span>
+    </span>
+  </div>
+
+  <div class="resumen-item">
+    <span>Alta cobertura durante el período diurno</span>
+
+    <span class="accesos">
+      <span class="acceso-badge acceso-badge-1">A1</span>
+      <span class="acceso-badge acceso-badge-2">A2</span>
+    </span>
+  </div>
+
+  <div class="resumen-item">
+    <span>Alta concentración de oportunidades en el área (&gt;900 POI)</span>
+
+    <span class="accesos">
+      <span class="acceso-badge acceso-badge-1">A1</span>
+      <span class="acceso-badge acceso-badge-2">A2</span>
+    </span>
+  </div>
+
+</div>
+
+<div class="resultado-principal">
+  <strong>Resultado principal:</strong>
+se observa un comportamiento esperado para un área con alta provisión de transporte y alta concentración de oportunidades, con una alta correspondencia entre nivel de servicio, presencia de población y oportunidades disponibles.
+</div>
+
+```
+
+:::
+
+::: {.columns-resultados-graficos}
+
+::: {.resultado-fila}
+<!-- ::: {.resultado-acceso-title}
+Acceso 1
+::: -->
+
+```{python}
+#| echo: false
+#| class: grafico-resultados
+
+from pathlib import Path
+from scrips import multiple_grafico
+
+main_path = Path.cwd().resolve()
+
+grafico_1 = (
+    main_path
+    / "Data"
+    / "Area Alta"
+    / "Graficos"
+    / "Kpi"
+    / "Acceso 1"
+    / "promedio_lunes_viernes.pickle"
+)
+
+grafico_2 = (
+    main_path
+    / "Data"
+    / "Area Alta"
+    / "Graficos"
+    / "Kpi"
+    / "Acceso 2"
+    / "promedio_lunes_viernes.pickle"
+)
+
+fig = multiple_grafico(
+    grafico_1=grafico_1,
+    grafico_2=grafico_2
+)
+
+fig
+
+```
+
+:::
+
+:::
+
+::::
