@@ -11,17 +11,16 @@
 /* =====================================================
    Slides generales
 ===================================================== */
-
 .reveal .slides section:not(.title-slide-custom) {
     text-align: left;
-
+    top: 0 !important;
     padding: 0;
 
     background-color: #efefef;
 
     box-sizing: border-box;
     overflow: hidden;
-
+  
     border: none !important;
 }
 
@@ -29,7 +28,6 @@
 /* =====================================================
    Barra superior
 ===================================================== */
-
 .reveal .slides section:not(.title-slide-custom) h1 {
     background-color: #17343a;
     color: #f4f4f4;
@@ -291,3 +289,6 @@
     margin-left: auto !important;
     margin-right: auto !important;
 }
+
+
+
