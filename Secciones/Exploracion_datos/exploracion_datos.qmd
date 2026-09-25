@@ -73,7 +73,7 @@ La metodología integra información de **transporte público, población flotan
 
 ::: {.fuente-box}
 
-**Fuente:** Google Places + Popular Times
+**Fuente:** Google Places
 
 :::
 

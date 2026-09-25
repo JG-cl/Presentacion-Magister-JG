@@ -58,7 +58,7 @@
     width: 92%;
 
     margin:
-        clamp(28px, 4vh, 50px) auto 0 auto;
+        clamp(28px, 2vh, 50px) auto 0 auto;
 
     display: grid;
 
@@ -97,11 +97,11 @@
 
     gap: 12px;
 
-    margin-bottom: 22px;
+    margin-bottom: 18px;
 
     color: #102f4f;
 
-    font-size: 0.6em;
+    font-size: 0.7em;
     font-weight: 600;
 }
 
@@ -119,7 +119,7 @@
     border: 2px solid #102f4f;
     border-radius: 50%;
 
-    font-size: 0.6em;
+    font-size: 0.7em;
     font-weight: 700;
 
     line-height: 1;

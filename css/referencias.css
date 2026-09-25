@@ -4,9 +4,17 @@
     text-align: left;
 }
 
+.refs-scroll {
+    max-height: 82%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    margin-top: 24px;
+    padding-right: 15px;
+}
+
 .reveal #refs .csl-entry {
     position: relative;
-    margin: 20px 40px 20px 20px;
+    margin: 0px 40px 20px 20px;
     padding: 10px;
     text-indent: 0px;
 
@@ -23,9 +31,3 @@
     box-shadow: 0 3px 8px rgba(0,0,0,0.14);
 }
 
-.refs-scroll {
-    max-height: 74vh;
-    overflow-y: auto;
-    overflow-x: hidden;
-    padding-right: 15px;
-}
