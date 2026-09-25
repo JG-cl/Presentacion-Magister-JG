@@ -7,10 +7,14 @@
     box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.25);
 }
 
+.reveal .slides>section:not(.pre-dicertacion):not(.title-slide-custom) {
+    top: 0 !important;
+}
 
 /* =====================================================
    Slides generales
 ===================================================== */
+.reveal .slides section:not(.pre-dicertacion)
 .reveal .slides section:not(.title-slide-custom) {
     text-align: left;
     top: 0 !important;
@@ -20,7 +24,6 @@
 
     box-sizing: border-box;
     overflow: hidden;
-  
     border: none !important;
 }
 
@@ -55,7 +58,6 @@
 /* =====================================================
    Número de slide
 ===================================================== */
-
 .reveal .slide-number {
     font-size: 22px;
 
@@ -70,37 +72,22 @@
 /* =====================================================
    Subtítulos
 ===================================================== */
-
 .reveal .slides section:not(.title-slide-custom) h2,
 .reveal .slides section:not(.title-slide-custom) h3 {
     color: #17343a;
-
     margin-left: 0px;
-
     text-transform: none;
 }
 
-
 .reveal .subtitle {
     background-color: #b5c1d2;
-
     border-left: 6px solid #17343a;
-
     padding: 6px 0px;
-
     border-bottom-right-radius: 100px;
-
-    /* 
-    box-shadow:
-        0 10px 10px rgba(0,0,0,0.08),
-        0 15px 15px rgba(0,0,0,0.05);
-    */
 
     margin-top: 0px;
     margin-bottom: 18px;
-
     font-size: 0.9em;
-
     background:
         linear-gradient(90deg,
             #b7c5d8 0%,
@@ -110,7 +97,6 @@
             rgba(183, 197, 216, .35) 97%,
             rgba(183, 197, 216, .12) 100%);
 }
-
 
 /* =====================================================
    Párrafos
@@ -125,22 +111,17 @@
     color: #233238;
 }
 
-
 /* =====================================================
    Listas
 ===================================================== */
-
 .reveal .slides section:not(.title-slide-custom) ul,
 .reveal .slides section:not(.title-slide-custom) ol {
     margin-left: 130px;
     margin-right: 120px;
-
     font-size: 1em;
     line-height: 1.7;
-
     color: #233238;
 }
-
 
 /* =====================================================
    Imágenes

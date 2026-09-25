@@ -70,7 +70,6 @@
 }
 
 .columns-sfrec-sub {
-    min-width: 0;
     box-sizing: border-box;
     padding: 16px 18px 14px 18px;
     background: #f7f9fb;
@@ -91,7 +90,6 @@
 .columns-sfrec-sub-formulas p {
     margin: 0 !important;
 }
-
 
 
 /* ==========================================
@@ -195,7 +193,6 @@
     border-right: none !important;
 }
 
-
 /* ==========================================
    CELDAS
    ========================================== */
@@ -216,7 +213,6 @@
     border-bottom: 1px solid #d4dde4 !important;
 }
 
-
 /* ==========================================
    FILAS ALTERNADAS
    ========================================== */
@@ -229,14 +225,12 @@
     background: #eaf0f4 !important;
 }
 
-
 /* LOS */
 
 .reveal .tabla-los-2 table tbody td:first-child {
     font-weight: 700 !important;
     color: #285b7c !important;
 }
-
 
 /* ==========================================
    TABLA CALIBRADA
