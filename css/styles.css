@@ -12,6 +12,16 @@
 }
 
 /* =====================================================
+   Slides config mobil
+===================================================== */
+
+.reveal-viewport.reveal-scroll .scroll-page section {
+    background-color: #efefef;
+    box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.25) !important;
+}
+
+
+/* =====================================================
    Slides generales
 ===================================================== */
 .reveal .slides section:not(.pre-dicertacion)
@@ -26,7 +36,6 @@
     overflow: hidden;
     border: none !important;
 }
-
 
 /* =====================================================
    Barra superior
