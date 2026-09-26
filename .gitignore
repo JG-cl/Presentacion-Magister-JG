@@ -6,6 +6,7 @@ venv/
 index-speaker.html
 mobile_fix.js
 block_pinch_mobil.js
+portrait_landscape_checker.js
 
 #GTFS Full
 Full
