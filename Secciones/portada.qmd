@@ -1,6 +1,5 @@
-
 ```{=html}
-<section class="title-slide-custom">
+<section class="title-slide-custom" data-menu-title="Portada">
 
 <div class="header">
   <div class="header-logo">

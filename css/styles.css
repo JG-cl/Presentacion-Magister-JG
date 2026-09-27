@@ -283,4 +283,11 @@
 }
 
 
+/* =====================================================
+   Fix menu slides
+===================================================== */
+.slide-menu-wrapper .slide-menu-item-vertical {
+    padding-left: 18px !important;
+}
+
 

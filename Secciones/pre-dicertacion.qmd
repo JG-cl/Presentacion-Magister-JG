@@ -1,5 +1,5 @@
 ```{=html}
-<section class="pre-dicertacion">
+<section class="pre-dicertacion"  data-menu-title="Pre-disertación" >
 
   <!-- =====================================================
        HEADER INSTITUCIONAL

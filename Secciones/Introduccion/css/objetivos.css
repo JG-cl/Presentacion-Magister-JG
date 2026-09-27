@@ -237,14 +237,10 @@
    ============================== */
 .reveal .obj-esp {
   position: relative;
-
   /* posición del conjunto */
-  margin: 30px 0 0 0 !important;
-  padding: 0 !important;
-
+  margin: 36px 0 0 0 !important;
   list-style: none;
 }
-
 
 .reveal .obj-esp p {
   margin: 0 20px 0 20px !important;
@@ -252,7 +248,8 @@
 
 .reveal .obj-esp ul {
   margin: 0 90px 0 90px !important;
-    
+  line-height: 1.4 !important;
+
 }
 
 /* Tarjetas */
