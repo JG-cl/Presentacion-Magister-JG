@@ -14,6 +14,13 @@
     flex-direction: column;
 }
 
+@media (orientation: portrait) and (max-width: 900px) {
+    .reveal .slides section.pre-dicertacion {
+        padding: 10% 7% 3.5% 10%;
+
+    }
+}
+
 /* =========================================================
    INTRO
    ========================================================= */

@@ -10,6 +10,13 @@
     flex-direction: column;
 }
 
+@media (orientation: portrait) and (max-width: 900px) {
+    .reveal .slides section.title-slide-custom {
+        padding: 10% 7% 3.5% 10%;
+
+    }
+}
+
 /* Header */
 .header {
   display: flex;
